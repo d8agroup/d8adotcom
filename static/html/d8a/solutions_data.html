@@ -1,0 +1,77 @@
+{% extends 'd8a/base.html' %}
+
+{% block page_title %}D8A - Data Solutions{% endblock %}
+{% block page_description %}We understand the power and beauty of data{% endblock %}
+
+{% block body %}
+    {% include 'd8a/nav_main.html' with current_page='solutions' %}
+    {% include 'd8a/nav_solutions.html' with current_page='data' %}
+
+    <div class="container solutions">
+        <h1 class="with-image">
+            <img src="/static/images/d8a/h1s/data.jpg" />
+            <span>We understand the power and beauty of data</span>
+        </h1>
+
+        <div class="row">
+            <div class="span8">
+                <div class="process-piece left clearfix large">
+                    <h4>Ideation</h4>
+                    <img src="/static/images/d8a/process/ideation-180.jpg" class="process-image"/>
+                    <h3>We understand data and how to craft solutions for working with data</h3>
+                    <p>At D8A, we have extensive experience in translating our clients problems into the mechanics of data systems design. We have worked with a wide variety of clients and a huge array of datasets. Our team is capable of understanding the nuances of our clients needs and delivering effective solutions.</p>
+                </div>
+                <div class="process-piece right clearfix large">
+                    <h4>Research</h4>
+                    <img src="/static/images/d8a/process/research-180.jpg" class="process-image"/>
+                    <h3>We research data and enable data driven research</h3>
+                    <p>D8A has a passion for leveraging data to solve problems and have an in depth understanding of the technology and practices needed to realize data driven solutions. Our solutions make it possible for organizations to consider data in new and impactful ways. </p>
+                </div>
+                <div class="process-piece left clearfix large">
+                    <h4>Strategy</h4>
+                    <img src="/static/images/d8a/process/strategy-180.jpg" class="process-image"/>
+                    <h3>Impactful data can change organizations and drive engagement</h3>
+                    <p>At D8A we understand data strategy. We assist our clients in defining the right strategy for collecting and using data and, we have extensive expertise in defining engagement strategies that captivate audiences with data discovery and visualization.</p>
+                </div>
+                <div class="process-piece right clearfix large">
+                    <h4>Implementation</h4>
+                    <img src="/static/images/d8a/process/implementation-180.jpg" class="process-image"/>
+                    <h3>Beautiful design and a focus on discover set our solutions apart</h3>
+                    <p>We see data solutions through the eyes of end users. This enables us to design and deliver solutions that actively promote the process of data discovery. Our team has expertise in almost all big data technologies and has consistently recommended and delivered the best technology for a wide range of customer needs.</p>
+                </div>
+            </div>
+            <div class="span3 offset1">
+                <h2><i class="icon-quote-left"></i> Our solutions enable the discovery of insights in large datasets.</h2>
+                <h2><i class="icon-quote-left"></i> We cut through the noise and surface the signals.</h2>
+                <h2 class="last"><i class="icon-quote-left"></i> We marry beautiful design and powerful visualizations and create exciting user experiences.</h2>
+            </div>
+        </div>
+
+        <h3>
+            <a href="/projects" class="pull-right">See all out projects <i class="icon-caret-right"></i></a>
+            Examples of our solutions in data discovery and visualization
+        </h3>
+        <div class="project-details-container">
+            <div>{# This empty div is required #}</div>
+            {% include 'd8a/projects/_all_projects.html' %}
+        </div>
+        <ul class="project-list inline">
+            {% with 'thumbnail' as context %}
+                {% include 'd8a/projects/wwp.html' %}
+                {% include 'd8a/projects/ted_globe.html' %}
+                {% include 'd8a/projects/geosprocket.html' %}
+                {% include 'd8a/projects/houston.html' %}
+                {% include 'd8a/projects/openseas.html' %}
+                {% include 'd8a/projects/enterpriseweb.html' %}
+                {% include 'd8a/projects/trss.html' %}
+                {% include 'd8a/projects/hfobd.html' %}
+            {% endwith %}
+        </ul>
+        <a class="site-section-link" href="/contact">
+            <i class="icon-caret-right"></i>
+            <h3>Looking for solutions to data visualization and discovery problems?</h3>
+            <p>If so, click here and contact us now.</p>
+        </a>
+    </div>
+
+{% endblock %}

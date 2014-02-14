@@ -1,0 +1,33 @@
+{% extends 'd8a/base.html' %}
+
+{% block page_title %}D8A.com | Contact{% endblock %}
+{% block page_description %}If you're looking to hire a global innovation and design firm, get in touch.{% endblock %}
+
+{% block body %}
+    {% include 'd8a/nav_main.html' with current_page='contact' %}
+
+
+    <div class="container contact">
+        <h1>Get in touch!</h1>
+        <h2><i class="icon-quote-left"></i> We'd love to learn how our data products can help you.</h2>
+        <div class="row">
+            <div class="span7">
+                <h3>Contact Us</h3>
+                <p>Please reach out to us at:</p>
+                <ul class="unstyled">
+                   <li><i class="icon-phone"></i> +1 (520) 301-7906</li>
+                   <li><i class="icon-envelope"></i> <a href="mailto:info@d8a.com">info@d8a.com</a></li>
+                </ul>
+            </div>
+            <div class="span4 offset1">
+                <h3>Careers</h3>
+                <p>We're a growing team and we are always interested in hearing from talent that would like to work with us.</p>
+                <p>If this sounds like you, please reach out and we’ll set up some time to chat.</p>
+                <ul class="unstyled">
+                    <li><i class="icon-envelope"></i> <a href="mailto:careers@d8a.com">careers@d8a.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

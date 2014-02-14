@@ -1,0 +1,18 @@
+{% if context == 'thumbnail' %}
+
+    <li class="product-thumbnail globe" data-target="globe">
+        <img src="/static/images/d8a/products/globe.png" />
+        <div class="caption">
+            <p>Interactive Maps and Location</p>
+        </div>
+    </li>
+
+{% else %}
+
+    <div class="product globe">
+        <h2>WebGL for Location Data</h2>
+        <img src="/static/images/d8a/products/globe.png" class="pull-left main-image" />
+        <p>Our customizations of the open source WebGL Globe project make working interactive location data a breeze.</p>
+    </div>
+
+{% endif %}

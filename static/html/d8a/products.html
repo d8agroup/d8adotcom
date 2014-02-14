@@ -1,0 +1,33 @@
+{% extends 'd8a/base.html' %}
+
+{% block page_title %}D8A.COM | Technologies{% endblock %}
+{% block page_description %}We take ownership of challenges and deliver ground breaking solutions{% endblock %}
+
+{% block body %}
+    {% include 'd8a/nav_main.html' with current_page='products' %}
+
+    <div class="container product">
+        <h1>THE D8A STACK</h1>
+        <div class="product-details-container">
+            <div class="product-details-message">
+                <h2>Data Solutions for Human Problems  </h2>
+                <p>D8A [formerly <a href="http://metalayer.com">MetaLayer</a>] offers a suite of predictive analytic products for finding correlations between online behavior patterns and offline interests. This helps our customers anticipate where, when, and what citizens need in real-time. This helps users working in areas of Public Safety, Governance, and Civic Engagement make better decisions as to how to serve the public.</p>
+	
+	<p><i class="icon-caret-left"></i> Click on any of the products below to learn more about the D8A Stack! Many of our solutions are open source, you can <a href="http://github.com/d8agroup">find them on GitHub</a>.</p>
+            </div>
+            {% include 'd8a/products/_all_products.html' %}
+        </div>
+        <ul class="product-list inline">
+            {% with 'thumbnail' as context %}
+			{% include 'd8a/products/metalayer.html' %}
+			{% include 'd8a/products/globe.html' %}
+			{% include 'd8a/products/odc.html' %}
+			{% include 'd8a/products/mux.html' %}
+			{% include 'd8a/products/opensource.html' %}
+			{% include 'd8a/products/siftdeck.html' %}
+			{% include 'd8a/products/upstream.html' %}
+            {% endwith %}
+        </ul>
+    </div>
+
+{% endblock %}

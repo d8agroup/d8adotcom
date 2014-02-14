@@ -1,0 +1,62 @@
+/* 
+MetaLayer.com Styles - Base.css
+Author: Jon Gosier (jongosier.com)
+Copyright: MetaLayer Inc.
+URL: http://metalayer.com
+*/
+
+/**********************************************************************************************************************/
+/* BASIC ELEMENT STYLING                                                                                              */
+/**********************************************************************************************************************/
+body {  font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; background-color:#FFF;  width:100%; }
+html { font-size: 80%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; width:100%;}
+a { cursor:pointer; text-decoration:none; color:inherit; }
+a:hover { text-decoration:none; }
+
+
+/**********************************************************************************************************************/
+/* Borders shadows and corners                                                                                        */
+/**********************************************************************************************************************/
+.box_shadow_grey {-moz-box-shadow: 3px 3px 6px -3px #4d4d4d; -webkit-box-shadow: 3px 3px 6px -3px #4d4d4d; box-shadow:3px 3px 6px -3px #4d4d4d;}
+.box_shadow_blue {-moz-box-shadow: 3px 3px 6px -3px #0B2C4D; -webkit-box-shadow: 3px 3px 6px -3px #0B2C4D; box-shadow:3px 3px 6px -3px #0B2C4D;}
+.corner_5 { -moz-border-radius: 5px 5px 5px 5px; -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px; -webkit-border-bottom-right-radius: 5px; -webkit-border-bottom-left-radius: 5px; border-top-left-radius: 5px 5px; border-top-right-radius: 5px 5px; border-bottom-right-radius: 5px 5px; border-bottom-left-radius: 5px 5px; }
+/**********************************************************************************************************************/
+/* SITE WIDE UTILITY CLASSES                                                                                          */
+/**********************************************************************************************************************/
+.left { float:left; }
+.right { float:right; }
+.center.one_third { padding-left:33%;}
+.one_half { width:49%; }
+.one_third { width:33%; }
+.two_thirds { width:66%; }
+.fill_width { width:100%; }
+
+/**********************************************************************************************************************/
+/* SITE WIDE WIDGETS                                                                                                  */
+/**********************************************************************************************************************/
+.errors { width:95%; margin:10px auto 20px; border:2px solid #F60; background-color:#FFB; padding:10px; }
+.alert { width:95%; margin:10px auto 20px; border:2px solid #05A; padding:10px; }
+.messages { width:900px; margin:10px auto; border:#d6dcd6 3px solid; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; background:#FFF; behavior:url(PIE.htc); box-shadow:0px 0px 8px #c7c7c7; -moz-box-shadow:0px 0px 8px #c7c7c7; -webkit-box-shadow:0px 0px 8px #c7c7c7;}
+.messages li { padding:20px 50px; font-size:110%; }
+.messages li.error { background:url('../../images/shared/caution.png') no-repeat 20px 13px; background-size:25px; }
+.messages li.info { background:url('../../images/shared/tick.png') no-repeat 20px 16px; background-size:22px; }
+
+form { width:90%; margin:10px auto; padding:10px; }
+form .help { font-style:italic; }
+form .form_row { padding:10px 0; }
+form .form_row .help { width:90%; margin:10px auto 0; }
+form .form_row, form .form_actions { margin:10px 0; }
+form .form_row label { font-weight:bold; font-size:120%;}
+form .form_row label, form .form_row input[type=text], form .form_row input[type=password] { display:inline-block; width:47%; padding:5px 0;}
+form .form_row .buttonset { display:inline-block;}
+form .form_row .buttonset label { width:inherit; padding:0;}
+form .form_row.checkbox_list { padding:5px 0;}
+form .form_row.checkbox_list label { display:block; width:100%; border-bottom:1px dashed #AAA; padding-bottom:5px;}
+form .form_row.checkbox_list .checkbox_list_item { padding:5px; width:30%; display:inline-block;}
+form .form_row.checkbox_list .checkbox_list_item input { position:relative; top:4px;}
+form .form_row.checkbox_list .checkbox_list_item img { width:16px; height:16px; position:relative; top:4px; left:-3px;}
+form .form_actions { text-align:center;}
+form .form_actions .button { width:100%;}
+form .form_actions.two_up .button { width:48%; }
+form .form_section { border: 1px solid #AAA; padding:10px; margin-bottom:40px;}
+form .form_section h5 { font-size:130%; position:relative; top:-20px; background-color:#FFF; display:inline-block; padding:0 10px 0 25px;}

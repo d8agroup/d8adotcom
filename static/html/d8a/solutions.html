@@ -1,0 +1,40 @@
+{% extends 'd8a/base.html' %}
+
+{% block page_title %}D8A - Solutions{% endblock %}
+{% block page_description %}We find smart solutions to some of the worlds most pervasive problems{% endblock %}
+
+{% block body %}
+    {% include 'd8a/nav_main.html' with current_page='solutions' %}
+    {% include 'd8a/nav_solutions.html' with current_page='all' %}
+
+    <div class="container solutions">
+        <h1 class="with-image">
+            <img src="/static/images/d8a/h1s/solutions.jpg" />
+            <span>We find smart solutions to some of the worlds most pervasive problems</span>
+        </h1>
+        <div class="row">
+            <div class="span3">
+                <h2><i class="icon-quote-left"></i> At D8A we understand how to push through problems and find solutions</h2>
+                <h2 class="last"><i class="icon-quote-left"></i> Our expertise in technology, program management and implementation ensure our solutions realize their potential</h2>
+            </div>
+            <div class="span8 offset1">
+                <a class="solutions-section-link" href="/solutions/data">
+                    <i class="icon-caret-right"></i>
+                    <h3>We understand the power and beauty of data</h3>
+                    <p>Click here to find out how our appreciation for the beauty of data drives our solutions to data discovery and visualization problems.</p>
+                </a>
+                <a class="solutions-section-link" href="/solutions/civic_engagement">
+                    <i class="icon-caret-right"></i>
+                    <h3>We improve civic engagement and service delivery</h3>
+                    <p>Click here to find out how our team creates solutions that drive service delivery and improve organizations understanding of their clients.</p>
+                </a>
+                <a class="solutions-section-link" href="/solutions/global">
+                    <i class="icon-caret-right"></i>
+                    <h3>We spark innovation and create global impact</h3>
+                    <p>Click here to find out how D8A designs strategies and programs that allow organizations to create global impact and drive social change.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

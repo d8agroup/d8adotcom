@@ -1,0 +1,43 @@
+
+/**********************************************************************************************************************/
+/* GRADIENTS                                                                                                          */
+/**********************************************************************************************************************/
+.gradient_dark_blue_to_light_blue {
+    background-image: -ms-linear-gradient(bottom, #2188EF 0%, #0B2C4D 100%);
+    background-image: -moz-linear-gradient(bottom, #2188EF 0%, #0B2C4D 100%);
+    background-image: -o-linear-gradient(bottom, #2188EF 0%, #0B2C4D 100%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #2188EF), color-stop(1, #0B2C4D));
+    background-image: -webkit-linear-gradient(bottom, #2188EF 0%, #0B2C4D 100%);
+    background-image: linear-gradient(to top, #2188EF 0%, #0B2C4D 100%);
+}
+
+
+/**********************************************************************************************************************/
+/* ELEMENTS                                                                                                           */
+/**********************************************************************************************************************/
+body { background:#2188EF; font-family:'Droid Sans', sans-serif; }
+h1 { font-size:180%; text-transform:uppercase; }
+
+#header_inner { width:1024px; margin:0 auto; height:50px; }
+
+#page { width:1024px; margin:0 auto; }
+.social_network { width:330px; float:left; margin:20px 8px 30px 0; border:1px solid #1E7AD7; }
+.social_network .inner { padding:10px; height:500px;}
+.social_network .loading { text-align:center; padding-top:160px; color:#0B2C4D; }
+.social_network .loading p { margin-top:20px; }
+.social_network h2 { font-size:180%; color:#0B2C4D; padding:10px 10px 10px 50px; }
+.social_network h3 { font-size:130%; color:#0B2C4D; padding:10px 0; }
+
+.social_network#twitter  h2 { background: url('/static/images/socialsummary/logo_twitter_medium.png') no-repeat; background-size:40px; }
+.social_network#facebook h2 { background: url('/static/images/socialsummary/logo_facebook_medium.png') no-repeat; background-size:40px; }
+.social_network#pinterest h2 { background: url('/static/images/socialsummary/logo_pinterest_medium.png') no-repeat; background-size:40px; }
+
+#twitter_accounts img { opacity:0.6; width:30px;}
+#twitter_accounts img:hover { opacity:1;}
+#twitter_sentiment { float:left; width:150px; margin-top:10px;}
+#twitter_sentiment h3 { text-align:center; padding-bottom:0px;}
+#twitter_sentiment .chart { width:150px; height:150px; }
+#twitter_velocity { float:right; width:150px; margin-top:10px;}
+#twitter_velocity h3 { text-align:center; padding-bottom:0px;}
+
+#footer { width:1024px; margin:0 auto; }

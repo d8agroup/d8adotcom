@@ -1,0 +1,19 @@
+{% if context == 'thumbnail' %}
+
+    <li class="project-thumbnail ted-globe" data-target="ted-globe">
+        <img src="/static/images/d8a/projects/globe.png" />
+        <div class="caption">
+            <p>Visualizing Real-Time Global to TED Talks</p>
+        </div>
+    </li>
+
+{% else %}
+
+    <div class="project ted-globe">
+        <h2>Visualizing Real-Time Global to TED Talks</h2>
+        <img src="/static/images/d8a/projects/globe.png" class="pull-left main-image" />
+        <p>At TED 2012 D8A unveiled a project that monitored, in real-time, the reaction across social media channels. Working with our partners at TED, D8A designed and built a fully interactive, 3D data-visualization depicting the global excitement for the TED conference.</p>
+        <p>This visualization was shown throughout the conference and all attendees were encouraged to interact with the results.</p>
+    </div>
+
+{% endif %}

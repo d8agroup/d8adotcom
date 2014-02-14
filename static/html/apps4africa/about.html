@@ -1,0 +1,44 @@
+{% extends 'apps4africa/base.html' %}
+
+{% block page_title %}Apps4Africa.org | Africa's Best Acceleration Program{% endblock %}
+{% block additional_meta_description %}Apps4Africa is a competitive funding program for Africa's entrepreneurs and innovators.{% endblock %}
+{% block additional_meta_keywords %}africa, apps, development, competition, challenge, accelerator{% endblock %}
+
+{% block body_class %}internal{% endblock %}
+
+{% block content %}
+<div id="section_one">
+    {% include 'apps4africa/shared/internal_nav.html' %}
+    <div id="breadcrumb"><a href="/home">Home</a> &raquo; <a href="/about">About</a></div>
+	<h4>About Apps4Africa</h4>
+    <p>Apps4Africa is a unique acceleration program designed to discover, fund, and help scale Africa's brightest startup companies and social enterprises. We work with both for-profit companies as well as non-profits and offer $10,000 in funding under favorable terms. Our program is Pan-African, servicing innovators from across the African continent.</p>
+	<p>Established in 2009 by <a href="http://appfrica.com">Appfrica</a>, we're one of Africa's oldest acceleration programs for entrepreneurs.</p>
+	<p><center><img src="/static/images/apps4africa/metrics/data-2.png" title="Apps4Africa Stats" width="400px">
+		<img src="/static/images/apps4africa/metrics/data-1.png" title="Apps4Africa Stats" width="400px"></center></p>
+	<h4>How We're Doing</h4>	
+	<p>To date we've accepted 19 companies into the accelerator, from 12 countries, of which 11 are still active. While our own contributions are small, we've been able to help companies raise (on average) over $90,000 in follow-on funding per company for a total of nearly $1 million raised. Often either we or our partners play a direct role in helping our participants get additional funding, other times its through their own hard-work and hustle. One thing remains constant, we're always thrilled to play a small part in their progress.</p>
+	<p>Some recent happenings across our portfolio: <a href="http://blog.apps4africa.org/2013/06/27/a4a2010-winner-icow-launches-partnership-with-safaricom/">iCow Launches Partnership with Safaricom</a>, <a href="http://blog.apps4africa.org/2013/06/24/a4a2011-winner-minishop-raises-328000/">Minishop Raises $328,000 USD</a>, <a href="http://blog.apps4africa.org/2013/06/21/slicebiz-goes-to-the-g8-innovation-conference/">SliceBiz Goes to the G8 Innovation Conference</a>, <a href="http://farmerline.org/latest-post/preparing-for-sessions-at-socap-2013/">Farmerline Rocks SOCAP 2013</a></p>
+	<p><center><img src="/static/images/apps4africa/metrics/wins.png" title="Apps4Africa Stats" width="980px"></center></p>
+	
+	
+</div>
+<div id="section_two" class="clearfix fill_width">
+	<div class="feature">
+        <br />
+        <a href="http://eepurl.com/fR3H9" title="newsletter" >
+            <img src="/static/images/shared/feature_mailer.png" title="apps4africa newsletter" />
+        </a>
+    </div>
+       <div class="feature">
+        <h4>Contact Us<br /><span>We Look Forward to Hearing From You</span></h4>
+		<p class="contact">Appfrica + D8A<br />
+		705 S. 3rd St. #3<br />
+		Philadelphia, PA 19147<br />
+		<strong>Phone:</strong> (520) 301-7906<br />
+		<strong>Email:</strong> <a href="mailto:info@apps4africa.org">info@apps4africa.org</a></p></div>
+       <div class="feature">
+           {% include 'apps4africa/shared/feature_nav.html' %}
+       </div>
+
+   </div>
+{% endblock %}

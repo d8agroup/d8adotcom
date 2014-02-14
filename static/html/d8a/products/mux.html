@@ -1,0 +1,18 @@
+{% if context == 'thumbnail' %}
+
+    <li class="product-thumbnail muxboard" data-target="muxboard">
+        <img src="/static/images/d8a/products/dash_1.jpg" />
+        <div class="caption">
+            <p>Adaptive User Interfaces</p>
+        </div>
+    </li>
+
+{% else %}
+
+    <div class="product muxboard">
+        <h2>Mux Board</h2>
+        <img src="/static/images/d8a/products/dash_2.jpg" class="pull-left main-image" />
+        <p>Mux Board is the flexible user interface pioneered by our flagship product MetaLayer. It was created to make connecting to and managing data tasks as simple as point and click, drag and drop. It's a dashboard that be deployed by: system admins, log managers or people working with high volume social media streams.</p>
+    </div>
+
+{% endif %}

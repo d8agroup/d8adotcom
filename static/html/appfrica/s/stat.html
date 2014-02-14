@@ -1,0 +1,56 @@
+{% extends 'appfrica/s/base.html' %}
+
+{% block page_title %}Statfrica.com | Africa's Quantified Self!{% endblock %}
+{% block additional_meta_description %}Statfrica is a resource for finding data about Africa.{% endblock %}
+{% block additional_meta_keywords %}africa, technology, impact investing, partner, invest, infosys{% endblock %}
+
+{% block body_class %}home{% endblock %}
+
+{% block content %}
+        <!--begin home section -->
+        <section id="home">
+        
+        	<div class="home_box">
+                                        
+            	<h1 class="slogan"><span>Discover. Learn. Share.</span><br />&nbsp;<br/>STATFRICA</h1>
+                
+                <a href="#services" class="read_more">More</a>
+                
+            </div>
+                        
+        </section>
+        <!--end home section -->
+{% include 'appfrica/s/about.html' %}         
+<!-- begin quotes -->
+ <div class="quotes_wrapper4">
+     <div class="quotes_box">
+         <span class="quotes_text">Visualizing various world facts as a periodic table.</span>
+     </div>
+ </div>
+ <!-- end quotes -->
+{% include 'appfrica/s/data.html' %}     
+        <!-- begin quotes -->
+        <div class="quotes_wrapper5">
+            <div class="quotes_box">
+                <span class="quotes_text">An infographic illustrating the rapidly changing landscape of Africa's IT infrastructure and internet penetration.</span>
+            </div>
+        </div>
+         <!-- end quotes -->
+
+{% include 'appfrica/s/subscribe.html' %}      
+<!-- begin quotes -->
+<div class="quotes_wrapper6">
+    <div class="quotes_box">
+        <span class="quotes_text_white">The top-level country codes of Africa positioned geo-spatially.</span>
+    </div>
+</div>
+<!-- end quotes -->        
+
+    
+{% include 'appfrica/contact.html' %}
+        
+{% include 'appfrica/s/footer.html' %}
+           
+    </div>
+    <!--! end of #container -->
+{% endblock %}

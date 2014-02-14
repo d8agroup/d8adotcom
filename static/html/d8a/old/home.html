@@ -1,0 +1,66 @@
+{% extends 'd8a/old/base.html' %}
+
+{% block page_title %}D8A.com | Technology + Ideation + Design{% endblock %}
+{% block additional_meta_description %}D8A is a design firm working in various areas of software development and social impact.{% endblock %}
+{% block additional_meta_keywords %}open data, government, design, innovation, creative, philadelphia{% endblock %}
+
+{% block body_class %}home{% endblock %}
+
+{% block content %}
+    <script type="text/javascript" language="javascript">
+        {% if message_sent %}
+            // If a contact us message was sent then scroll down to the contact us section
+            $(document).ready(function() {$('#nav li.last a').click()});
+        {% endif %}
+    </script>
+
+        <!--begin home section -->
+        <section id="home">
+        
+        	<div class="home_box">
+                                        
+            	<h1 class="slogan"><span>Welcome to</span><br />&nbsp;<br/>D8A</h1>
+                
+                <a href="#services" class="read_more">Discover More</a>
+                
+            </div>
+                        
+        </section>
+        <!--end home section -->
+{% include 'd8a/old/services.html' %}
+<!-- begin quotes -->
+ <div class="quotes_wrapper2">
+     <div class="quotes_box">
+         <span class="quotes_text">We helped noted author Rick Smolan launch the media campaign around his book by contributing an onsite display, web development, and data visualization.</span>
+         <span class="quotes_autor">Project: Human Face of Big Data</span>
+     </div>
+ </div>
+ <!-- end quotes -->
+{% include 'd8a/old/about.html' %}
+        <!-- begin quotes -->
+        <div class="quotes_wrapper3">
+            <div class="quotes_box">
+                <span class="quotes_text">We help cities respond to citizen demand more efficiently by helping them process data.</span>
+                <span class="quotes_autor">Project: Social Media Analysis During Hurricane</span>
+            </div>
+        </div>
+         <!-- end quotes -->
+
+{% include 'd8a/old/work.html' %}
+<!-- begin quotes -->
+<div class="quotes_wrapper1">
+    <div class="quotes_box">
+        <span class="quotes_text">We're committed to making sure the future is evenly spread to all around the world.</span>
+        <span class="quotes_autor">Project: Apps4Africa</span>
+    </div>
+</div>
+<!-- end quotes -->        
+
+    
+{% include 'd8a/old/contact.html' %}
+        
+{% include 'd8a/old/footer.html' %}
+           
+    </div>
+    <!--! end of #container -->
+{% endblock %}

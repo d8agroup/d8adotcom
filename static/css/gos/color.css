@@ -1,0 +1,98 @@
+/* Button Accent Color */
+
+.button-small-theme {
+    background: #CCC;
+    color: #000 !important;
+}
+
+/* Yellow Accent (Demo) */
+
+.dd_events_post .continue, 
+.widget_btn .continue,
+.dd_causes_widget li ul a,
+.dd_news h1 a, 
+.dd_news_post h1 a
+
+{
+    background: #CCC;
+}
+
+.dd_news h1, .dd_news_post h1 {
+    -webkit-box-shadow:inset 10px 0 0 #CCC;
+    -moz-box-shadow:inset 10px 0 0 #CCC;
+    box-shadow:inset 10px 0 0 #CCC;
+}
+
+.dd_news h1 a, .dd_news_post h1 a{
+    -webkit-box-shadow:10px 0 0 #CCC ;
+    -moz-box-shadow: 10px 0 0 #CCC ;
+    box-shadow: 10px 0 0 #CCC;
+}
+
+footer .one-third, .mainNav  {
+    border-top: 3px solid #990033;
+}
+
+footer h3, footer ul h3  {
+    color: #005a8b;
+}
+
+.flex-caption a:hover h1 {
+    color: #fff;
+    background: #555 !important;
+}
+
+/* Blue Links (Demo) */
+
+a,
+.metaBtn li a,
+.widget h3 a,
+a.continue,
+.caption-btn li a
+
+{ 
+color: #005a8b;
+}
+
+a:hover,
+.metaBtn li a:hover,
+.widget h3 a:hover,
+a.continue:hover,
+.caption-btn li a:hover
+
+{ 
+color: #444;
+}
+
+/* Donate Button */
+
+a.donateBtn,
+.donate
+{
+     background: #81B721;
+     color: #fff;
+}
+
+/* Mail Button */
+
+.mail {
+    background: #ee6500;
+}
+
+/* Twitter Button */
+
+.twitter {
+    background: #00acee;
+}
+
+/* Facebook Button */
+
+.facebook, a.facebookBtn {
+    background: #3b5998;
+}
+
+/* Search Button */
+
+.search {
+    background: #3d3d3d;
+}

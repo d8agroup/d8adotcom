@@ -1,0 +1,286 @@
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+html, button, input, select, textarea { font-family: 'open_sansregular', Arial, Helvetica, sans-serif; }
+body { background-color:#FFF; }
+body > .container { padding-top:30px; min-height:600px; }
+footer { background-color:#1D1F21; color:#FFF; height:30px; font-size: 12px; font-family: 'open_sansregular', Arial, Helvetica, sans-serif; padding-top:10px; }
+h1, h2, h3, h4, h5, h6 { color: #181818; font-family: 'open_sanssemibold', Arial, Helvetica, sans-serif; }
+h1 { text-align:center; margin:20px auto 40px; font-size:65px; line-height:65px; }
+h1.with-image { margin-top: 0; }
+h1.with-image span { display:none; }
+h2 { margin:20px auto 40px; font-size:30px; line-height:110%; width:90%; }
+h2 i { color:#008ba9; }
+h3 a { text-decoration:none !important; padding-right:20px; }
+a { color:#008ba9; }
+
+/* @font-face
+---------------------------------------------------------- */
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('/static/html/appfrica/lib/font/opensans-regular-webfont.eot');
+    src: url('/static/html/appfrica/lib/font/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/static/html/appfrica/lib/font/opensans-regular-webfont.woff') format('woff'),
+         url('/static/html/appfrica/lib/font/opensans-regular-webfont.ttf') format('truetype'),
+         url('/static/html/appfrica/lib/font/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('/static/html/appfrica/lib/font/opensans-semibold-webfont.eot');
+    src: url('/static/html/appfrica/lib/font/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/static/html/appfrica/lib/font/opensans-semibold-webfont.woff') format('woff'),
+         url('/static/html/appfrica/lib/font/opensans-semibold-webfont.ttf') format('truetype'),
+         url('/static/html/appfrica/lib/font/opensans-semibold-webfont.svg#open_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('/static/html/appfrica/lib/font/opensans-bold-webfont.eot');
+    src: url('/static/html/appfrica/lib/font/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/static/html/appfrica/lib/font/opensans-bold-webfont.woff') format('woff'),
+         url('/static/html/appfrica/lib/font/opensans-bold-webfont.ttf') format('truetype'),
+         url('/static/html/appfrica/lib/font/opensans-bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansbold_italic';
+    src: url('/static/html/appfrica/lib/font/opensans-bolditalic-webfont.eot');
+    src: url('/static/html/appfrica/lib/font/opensans-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/static/html/appfrica/lib/font/opensans-bolditalic-webfont.woff') format('woff'),
+         url('/static/html/appfrica/lib/font/opensans-bolditalic-webfont.ttf') format('truetype'),
+         url('/static/html/appfrica/lib/font/opensans-bolditalic-webfont.svg#open_sansbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansextrabold';
+    src: url('/static/html/appfrica/lib/font/opensans-extrabold-webfont.eot');
+    src: url('/static/html/appfrica/lib/font/opensans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/static/html/appfrica/lib/font/opensans-extrabold-webfont.woff') format('woff'),
+         url('/static/html/appfrica/lib/font/opensans-extrabold-webfont.ttf') format('truetype'),
+         url('/static/html/appfrica/lib/font/opensans-extrabold-webfont.svg#open_sansextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansextrabold_italic';
+    src: url('/static/html/appfrica/lib/font/opensans-extrabolditalic-webfont.eot');
+    src: url('/static/html/appfrica/lib/font/opensans-extrabolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/static/html/appfrica/lib/font/opensans-extrabolditalic-webfont.woff') format('woff'),
+         url('/static/html/appfrica/lib/font/opensans-extrabolditalic-webfont.ttf') format('truetype'),
+         url('/static/html/appfrica/lib/font/opensans-extrabolditalic-webfont.svg#open_sansextrabold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansitalic';
+    src: url('/static/html/appfrica/lib/font/opensans-italic-webfont.eot');
+    src: url('/static/html/appfrica/lib/font/opensans-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/static/html/appfrica/lib/font/opensans-italic-webfont.woff') format('woff'),
+         url('/static/html/appfrica/lib/font/opensans-italic-webfont.ttf') format('truetype'),
+         url('/static/html/appfrica/lib/font/opensans-italic-webfont.svg#open_sansitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('/static/html/appfrica/lib/font/opensans-light-webfont.eot');
+    src: url('/static/html/appfrica/lib/font/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/static/html/appfrica/lib/font/opensans-light-webfont.woff') format('woff'),
+         url('/static/html/appfrica/lib/font/opensans-light-webfont.ttf') format('truetype'),
+         url('/static/html/appfrica/lib/font/opensans-light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanssemibold_italic';
+    src: url('/static/html/appfrica/lib/font/opensans-semibolditalic-webfont.eot');
+    src: url('/static/html/appfrica/lib/font/opensans-semibolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/static/html/appfrica/lib/font/opensans-semibolditalic-webfont.woff') format('woff'),
+         url('/static/html/appfrica/lib/font/opensans-semibolditalic-webfont.ttf') format('truetype'),
+         url('/static/html/appfrica/lib/font/opensans-semibolditalic-webfont.svg#open_sanssemibold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* PRE HEADER */
+#pre-header { background-color:#1D1F21; border-bottom: 1px solid #757575; font-size:100%; height:30px; font-size: 12px; font-family: 'open_sansregular', Arial, Helvetica, sans-serif; }
+#pre-header-social-links { margin:0; padding:0; }
+#pre-header-social-links li { border-left:1px solid #757575; height:30px; }
+#pre-header-social-links li.last { border-right:1px solid #757575; }
+#pre-header-social-links li a { color:#FFF; text-decoration:none; padding-top:5px; display:inline-block; }
+#pre-header-contact-info { color:#FFF; margin-top:5px; text-align:right; }
+#pre-header-contact-info i { padding:0 5px 0 20px; }
+
+
+/* MAIN NAV */
+#main-nav { background-color:#1D1F21; border-bottom: 1px solid #757575; }
+#main-nav-list { margin:0; }
+#main-nav-list li { width:70px; height:70px; border-left:1px solid #757575; position:relative; font-size: 12px; font-family: 'open_sansregular', Arial, Helvetica, sans-serif; }
+#main-nav-list li.last { border-right:1px solid #757575; }
+#main-nav-list li a { display:block; text-align:center; color:#FFF; text-decoration:none; width:100%; position:absolute; bottom:0; left:0; padding-bottom:20px; }
+#main-nav-list li a i { display:block; font-size: 14px; }
+#main-nav-list li:hover { background-color:#008ba9; }
+#main-nav-list li.active { background-color:#008ba9; }
+#main-nav-logo { margin-top:15px; }
+
+/* PROJECTS NAV */
+#nav-projects { background-color:#1D1F21; border-bottom: 1px solid #757575; }
+#nav-projects ul { margin:0; }
+#nav-projects li { min-width:180px; height:25px; border-left:1px solid #757575; position:relative; font-size: 12px; font-family: 'open_sansregular', Arial, Helvetica, sans-serif; }
+#nav-projects li.last { border-right:1px solid #757575; }
+#nav-projects li a { display:block; text-align:center; color:#FFF; text-decoration:none; width:100%; position:absolute; bottom:0; left:0; }
+#nav-projects li:hover { background-color:#008ba9; }
+#nav-projects li.active { background-color:#008ba9; }
+
+/* product NAV */
+#nav-product { background-color:#1D1F21; border-bottom: 1px solid #757575; }
+#nav-product ul { margin:0; }
+#nav-product li { min-width:180px; height:25px; border-left:1px solid #757575; position:relative; font-size: 12px; font-family: 'open_sansregular', Arial, Helvetica, sans-serif; }
+#nav-product li.last { border-right:1px solid #757575; }
+#nav-product li a { display:block; text-align:center; color:#FFF; text-decoration:none; width:100%; position:absolute; bottom:0; left:0; }
+#nav-product li:hover { background-color:#008ba9; }
+#nav-product li.active { background-color:#008ba9; }
+
+/* SOLUTIONS NAV */
+#nav-solutions { background-color:#1D1F21; border-bottom: 1px solid #757575; font-size:90%; }
+#nav-solutions ul { margin:0; width:100%; padding:0;}
+#nav-solutions li { width:23%; height:25px; border-left:1px solid #757575; position:relative; border-top:3px solid #008ba9;}
+#nav-solutions li.last { border-right:1px solid #757575; }
+#nav-solutions li a { display:block; text-align:center; color:#FFF; text-decoration:none; width:100%; position:absolute; bottom:0; left:0; font-size: 12px; font-family: 'open_sansregular', Arial, Helvetica, sans-serif; }
+#nav-solutions li:hover { background-color:#008ba9; }
+#nav-solutions li.active { background-color:#008ba9; }
+
+/* HOME */
+#home-mission-statement { text-align: center; margin: 50px;}
+#home-process .process-step { width:23%; text-align:center; position:relative; }
+#home-process .process-step h3 { position:absolute; width:100%; text-align:center; bottom:-15px; text-shadow: 2px 2px 5px #DDD; font-size:20px; }
+#home-process-details { height:100px; text-align:center; margin:50px 0;}
+.site-section-link { width:80%; margin:20px auto; display:block; text-decoration:none; position:relative; height:200px; text-decoration: none !important;}
+.site-section-link > i { float:right; font-size:250px; position:absolute; top:-50px; right:0; padding-left:50px;}
+.site-section-link h3 { padding-right:150px; }
+.site-section-link p { padding-right:200px; }
+
+/* CAPABILITIES */
+.capabilities > h2 span { margin-left:60px;}
+.capabilities > h2 i { font-size:60px; float:left; padding-right:20px; }
+.capabilities > h2.last { margin-bottom:80px; }
+.capabilities .capability-container { margin-bottom:40px; }
+.capabilities .capability-container h3 { font-size:40px; color:#008ba9; }
+.capability-details-container { width:400px; float:right; padding-right:10px; position:relative; top:-25px;}
+.capability-details-container h2 { margin-bottom:10px;  width:100%;}
+.capability-details-message p { margin-left:10px; margin-bottom:30px;}
+.capability-details-container .capability { display:none;}
+.capability-details-container .capability p { text-align:justify; }
+.capability-details-container .capability .main-image { max-width:200px; padding-right:15px; padding-bottom:10px; position:relative; top:5px;}
+.capability-details-container .capability .process-piece { margin:20px 0;}
+.capability-details-container .capability .process-piece img { float:left; width:70px; padding:0 10px; }
+.capability-thumbnail { overflow:hidden; width:220px; position:relative; height:200px; padding:0 !important; border:1px solid; margin:5px 1%; cursor:pointer; vertical-align: middle; }
+.capability-thumbnail img {  opacity:.6; width:100%; }
+.capability-thumbnail .caption { position:absolute; bottom:0; left:0; width:100%; background:rgba(0,0,0,.7); color:#FFF; min-height:50px; }
+.capability-thumbnail .caption p { padding:5px; font-weight:bold; text-align:center; margin:0;}
+
+/* CLIENTS */
+.clients #clients-logos { background-color:#FFF; margin-left:25px; }
+.clients #clients-logos li { padding-bottom:10px; margin:0; }
+.clients #clients-logos img { opacity:0.7; width:200px; }
+.clients #clients-logos img:hover { opacity:1; }
+
+.clients > h2 i { font-size:60px; float:left; padding-right:20px; }
+.clients > h2.last { margin-bottom:80px; }
+.client-details-container { width:400px; float:right; padding-right:10px; position:relative; top:-25px;}
+.client-details-container > h2 { margin-bottom:10px;  width:100%; }
+.client-details-message p { margin-left:10px; margin-bottom:30px; }
+.client-details-container .client { display:none;}
+.client-details-container .client > h2 { font-size:50px; }
+.client-details-container .client p { text-align:justify; }
+.client-details-container .client .main-image { max-width:200px; padding-right:15px; padding-bottom:10px; position:relative; top:5px;}
+.client-details-container .client .process-piece { margin:20px 0; }
+.client-details-container .client .process-piece img { float:left; width:70px; padding:0 10px; }
+.client-thumbnail { overflow:hidden; width:220px; position:relative; height:200px; padding:0 !important; border:1px solid; margin:5px 1%; cursor:pointer; vertical-align: middle; }
+.client-thumbnail img {  opacity:.6; width:100%; }
+.client-thumbnail .caption { position:absolute; bottom:0; left:0; width:100%; background:rgba(0,0,0,.7); color:#FFF; min-height:50px; }
+.client-thumbnail .caption p { padding:5px; font-weight:bold; text-align:center; margin:0; }
+
+/* SOLUTIONS */
+.solutions > h3 { margin-top:60px; }
+.solutions .process-piece.large { width:90%; margin:40px auto; position:relative; }
+.solutions .process-piece.large .process-image { width:180px; margin-top:5px;}
+.solutions .process-piece.large.left .process-image { float:left; margin-right:20px;}
+.solutions .process-piece.large.left > h4 { left:0; }
+.solutions .process-piece.large.right .process-image { float:right; margin-left:20px; }
+.solutions .process-piece.large.right > h4 { right:0;  }
+.solutions .process-piece.large h3 { margin:0 0 20px; line-height:110%; color:#008ba9;}
+.solutions .process-piece.large h4 { position:absolute; width:180px; text-align:center; font-size:20px; top:155px;}
+.solutions .process-piece.large p { text-align:justify;}
+.solutions .solutions-section-link {  margin:20px auto; display:block; text-decoration:none; position:relative; height:210px;}
+.solutions .solutions-section-link > i { float:right; font-size:250px; position:absolute; top:-50px; right:0; padding-left:50px;}
+.solutions .solutions-section-link h3 { padding-right:100px; font-size:25px; line-height:110%; margin-bottom:20px; padding-top:20px;}
+.solutions .solutions-section-link p { padding-right:200px; }
+.solutions .site-section-link { margin-top:50px; }
+
+/* PROJECTS */
+.project-details-container { width:550px; float:right; padding-right:10px; position:relative; top:-25px; }
+.project-details-container h2 { margin-bottom:10px; width:100%;}
+.project-details-message p { margin-left:10px; margin-bottom:30px; font-size: 12px; font-family: 'open_sansregular', Arial, Helvetica, sans-serif; }
+.project-details-container .project { display:none; }
+.project-details-container .project p { text-align:justify; }
+.project-details-container .project .main-image { max-width:200px; padding-right:15px; padding-bottom:10px; position:relative; top:5px;}
+.project-details-container .project .process-piece { margin:20px 0; }
+.project-details-container .project .process-piece img { float:left; width:70px; padding:0 10px; }
+.project-details-container .project .process-piece p { margin-left:89px; }
+.project-thumbnail { overflow:hidden; width:280px; position:relative; height:150px; padding:0 !important; margin:5px 1%; cursor:pointer; vertical-align: middle; }
+.project-thumbnail img {  width:100%; }
+.project-thumbnail .caption { position:absolute; bottom:0; left:0; width:100%; background:rgba(0,0,0,.7); color:#FFF; min-height:50px; font-size: 12px; font-family: 'open_sansregular', Arial, Helvetica, sans-serif; }
+.project-thumbnail .caption p { padding:5px; text-align:center; margin:0; }
+
+/* PRODUCT */
+.product-details-container { width:550px; float:right; padding-right:10px; position:relative; top:-25px; }
+.product-details-container h2 { margin-bottom:10px; width:100%; }
+.product-details-message p { margin-left:10px; margin-bottom:30px; font-size: 12px; font-family: 'open_sansregular', Arial, Helvetica, sans-serif; }
+.product-details-container .product { display:none; }
+.product-details-container .product p { text-align:justify; }
+.product-details-container .product .main-image { max-width:200px; padding-right:15px; padding-bottom:10px; position:relative; top:5px;}
+.product-details-container .product.process-piece { margin:20px 0; }
+.product-details-container .product .process-piece img { float:left; width:70px; padding:0 10px; }
+.product-details-container .product .process-piece p { margin-left:89px;}
+.product-thumbnail { overflow:hidden; width:280px; position:relative; height:150px; padding:0 !important; margin:5px 1%; cursor:pointer; vertical-align: middle; }
+.product-thumbnail img { width:100%; }
+.product-thumbnail .caption { position:absolute; bottom:0; left:0; width:100%; background:rgba(0,0,0,.7); color:#FFF; min-height:50px; font-size: 12px; font-family: 'open_sansregular', Arial, Helvetica, sans-serif; }
+.product-thumbnail .caption p { padding:5px; text-align:center; margin:0; }
+
+/* ABOUT */
+.about h2 i { font-size:60px; float:left; padding-right:20px; }
+.about #about-team { margin-bottom:30px; }
+.about .person h5 { font-size:20px; padding-top:10px; }
+.about .person p { text-align:justify; }
+.about .person .image { width:300px; overflow:hidden; height:180px; padding:20px; }
+.about .awards { background-color:#1D1F21; color:#DDD; }
+.about .awards h3 { text-align:center; font-size:40px; margin-bottom:30px; color:#FFF; }
+.about .award { padding-left:5px; padding: 15px; margin:20px 0; font-size: 90%; font-family: 'open_sansregular', Arial, Helvetica, sans-serif; }
+.about .award i { font-size:60px; float:left; padding-right:20px; color:#FaFaFa; }
+.about .award h5 { font-size:18px; line-height:110%; color:#EEE; }
+.about .process-piece { width:90%; margin:40px auto; position:relative; }
+.about .process-piece img { width:140px; height:140px; float:left; padding-right:30px; }
+.about .process-piece h3 { position:absolute; width:140px; text-align:center; top:102px; font-size:16px; }
+.about .process-piece h4 { font-size:22px; line-height:150%; margin-top:20px; }
+
+
+/* CONTACT */
+.contact h2 i { font-size:60px; float:left; padding-right:20px; }
+.contact h3 { border-bottom: 1px solid; }
+.contact .image { width:200px; padding-left:10px; }
+.contact ul { margin-bottom: 30px; }
+.contact li { font-size:14px; margin:10px; }
+.contact li i { margin:10px; }
+.contact p { text-align:justify;}

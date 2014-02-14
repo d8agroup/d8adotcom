@@ -1,0 +1,56 @@
+{% extends 'appfrica/base.html' %}
+
+{% block page_title %}Appfrica.com | Building the Future From Africa{% endblock %}
+{% block additional_meta_description %}Appfrica is like the Infosys of Africa. We help companies make money in emerging markets while also helping them have social impact in 35 countries.{% endblock %}
+{% block additional_meta_keywords %}africa, technology, impact investing, partner, invest, infosys{% endblock %}
+
+{% block body_class %}home{% endblock %}
+
+{% block content %}
+        <!--begin home section -->
+        <section id="home">
+        
+        	<div class="home_box">
+                                        
+            	<h1 class="slogan"><span>Welcome to</span><br />&nbsp;<br/>APPFRICA</h1>
+                
+                <a href="#services" class="read_more">Discover More</a>
+                
+            </div>
+                        
+        </section>
+        <!--end home section -->
+{% include 'appfrica/services.html' %}         
+<!-- begin quotes -->
+ <div class="quotes_wrapper2">
+     <div class="quotes_box">
+         <span class="quotes_text">Working anywhere requires a degree of local expertise. We help our partners hire, contract, and manage technology teams across Africa.</span>
+     </div>
+ </div>
+ <!-- end quotes -->
+{% include 'appfrica/about.html' %}     
+        <!-- begin quotes -->
+        <div class="quotes_wrapper3">
+            <div class="quotes_box">
+                <span class="quotes_text">In 2010 we invested in one of Africa's most prominent innovation hubs, Hive Colab, in Kampala, Uganda. It serves as a training facility and event space for our corporate partners like Mozilla, Microsoft and more!</span>
+            </div>
+        </div>
+         <!-- end quotes -->
+
+{% include 'appfrica/work.html' %}      
+<!-- begin quotes -->
+<div class="quotes_wrapper1">
+    <div class="quotes_box">
+        <span class="quotes_text">There isn't a better group of strategists and implementers on the continent -- Get in touch and we'll prove it! <a href="#contact">Contact us today</a>.</span>
+    </div>
+</div>
+<!-- end quotes -->        
+
+    
+{% include 'appfrica/contact.html' %}
+        
+{% include 'appfrica/footer.html' %}
+           
+    </div>
+    <!--! end of #container -->
+{% endblock %}

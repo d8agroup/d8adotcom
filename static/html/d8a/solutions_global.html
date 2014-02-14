@@ -1,0 +1,78 @@
+{% extends 'd8a/base.html' %}
+
+{% block page_title %}D8A - Global Impact{% endblock %}
+{% block page_description %}We spark innovation and create global impact{% endblock %}
+
+{% block body %}
+    {% include 'd8a/nav_main.html' with current_page='solutions' %}
+    {% include 'd8a/nav_solutions.html' with current_page='global' %}
+
+    <div class="container solutions">
+        <h1 class="with-image">
+            <img src="/static/images/d8a/h1s/global_impact.jpg" />
+            <span>We spark innovation and create global impact</span>
+        </h1>
+
+        <div class="row">
+            <div class="span8">
+                <div class="process-piece left clearfix large">
+                    <h4>Ideation</h4>
+                    <img src="/static/images/d8a/process/ideation-180.jpg" class="process-image"/>
+                    <h3>D8A harnesses creative thinking to drive social impact</h3>
+                    <p>Around the world, local communities need investment.  Let D8A help ideate around how your investment can be maximized at the local level.</p>
+                </div>
+                <div class="process-piece right clearfix large">
+                    <h4>Research</h4>
+                    <img src="/static/images/d8a/process/research-180.jpg" class="process-image"/>
+                    <h3>D8A believes in establishing a deep understanding of people and regions- this drives our unique approach</h3>
+                    <p>D8A will work with you to identify the right approaches to engage with local and international communities in ways that are in alignment with your core business and regional focus.</p>
+                </div>
+                <div class="process-piece left clearfix large">
+                    <h4>Strategy</h4>
+                    <img src="/static/images/d8a/process/strategy-180.jpg" class="process-image"/>
+                    <h3>Our strategies create and grow impact</h3>
+                    <p>Many companies, from corporations with CSR mandates to technology companies that want to make an impact on the ground, don’t know where to start. Let D8A help you create a meaningful social impact strategy that focuses on real results.</p>
+                </div>
+                <div class="process-piece right clearfix large">
+                    <h4>Implementation</h4>
+                    <img src="/static/images/d8a/process/implementation-180.jpg" class="process-image"/>
+                    <h3>Full service implementation of your impact strategy</h3>
+                    <p>D8A will assist you in implementing a holistic strategy to realize your goals for global impact- locally and regionally.  We have implemented strategies that include localized training, short and long term employment, PR/Communications, and partnership management.</p>
+                </div>
+            </div>
+            <div class="span3 offset1">
+                <h2><i class="icon-quote-left"></i> D8A uses innovative approaches to create social impact, globally</h2>
+                <h2><i class="icon-quote-left"></i> We will work with you to create partnerships that engage local communities to build capacity and drive social change. </h2>
+                <h2 class="last"><i class="icon-quote-left"></i> We interact with local SMEs to improve strategies that deliver sustainable growth</h2>
+            </div>
+        </div>
+
+
+        <h3>
+            <a href="/projects" class="pull-right">See all out projects <i class="icon-caret-right"></i></a>
+            Examples of our solutions for global impact
+        </h3>
+        <div class="project-details-container">
+            <div>{# This empty div is required #}</div>
+            {% include 'd8a/projects/_all_projects.html' %}
+        </div>
+        <ul class="project-list inline">
+            {% with 'thumbnail' as context %}
+                {% include 'd8a/projects/a4a_1.html' %}
+                {% include 'd8a/projects/hive.html' %}
+                {% include 'd8a/projects/swiftriver.html' %}
+                {% include 'd8a/projects/abayima.html' %}
+                {% include 'd8a/projects/rnw_1.html' %}
+                {% include 'd8a/projects/questionbox.html' %}
+                {% include 'd8a/projects/googletranslate.html' %}
+            {% endwith %}
+        </ul>
+        <a class="site-section-link" href="/contact">
+            <i class="icon-caret-right"></i>
+            <h3>Looking to create global impact?</h3>
+            <p>If so, click here and contact us now.</p>
+        </a>
+
+    </div>
+
+{% endblock %}

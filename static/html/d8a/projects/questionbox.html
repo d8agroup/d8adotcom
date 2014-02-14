@@ -1,0 +1,18 @@
+{% if context == 'thumbnail' %}
+
+    <li class="project-thumbnail questionbox" data-target="questionbox">
+        <img src="/static/images/d8a/projects/questionbox.png" />
+        <div class="caption">
+            <p>Search Technology for Developing Countries</p>
+        </div>
+    </li>
+
+{% else %}
+
+    <div class="project questionbox">
+        <h2>Search Technology for Developing Countries</h2>
+        <img src="/static/images/d8a/projects/questionbox.png" class="pull-left main-image" />
+        <p>In partnership with non-profit OpenMind, D8A successfully developed and deployed QuestionBox in 2009. QuestionBox allowed users in developing countries to use the internet using their mobile phones. The platform was hailed as offering search 'where Google can't'.</p>
+    </div>
+
+{% endif %}

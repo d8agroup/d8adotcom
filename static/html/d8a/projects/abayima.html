@@ -1,0 +1,31 @@
+{% if context == 'thumbnail' %}
+
+    <li class="project-thumbnail abayima" data-target="abayima">
+        <img src="/static/images/d8a/projects/abayima.png" />
+        <div class="caption">
+            <p>Mobile Crisis Communications</p>
+        </div>
+    </li>
+
+{% else %}
+
+    <div class="project abayima">
+        <h2>Mobile Crisis Communications</h2>
+        <img src="/static/images/d8a/projects/abayima.png" class="pull-left main-image" />
+        <p>Born during Uganda's 2011 presidential elections, <a href="http://abayima.com/" target="_blank">Abayima</a> is a project that aims to create mobile communication networks that can be used when normal telecommunication channels like mobile networks and the internet are compromised.</p>
+        <p>Abayima aims to deliver technological solutions that allows citizens, activists, and journalists to stay connected to one another during times of crisis. Visit <a href="http://abayima.com/" target="_blank">Abayima.com</a> for more.</p>
+        <div class="process-piece">
+            <img src="/static/images/d8a/process/ideation-70.jpg"/>
+            <p>The concepts that underpin Abayima embody D8A’s ability find innovative and contextually relevant solutions to some of the most pervasive challenges of our time.</p>
+        </div>
+        <div class="process-piece">
+            <img src="/static/images/d8a/process/research-70.jpg"/>
+            <p>Projects like this are made possible because of our commitment to understanding the challenges affecting technology solutions deployed in developing countries.</p>
+        </div>
+        <div class="process-piece">
+            <img src="/static/images/d8a/process/implementation-70.jpg"/>
+            <p>Our team has consistently built and deployed solutions that have an impact on the way citizen journalists operate in times of duress.</p>
+        </div>
+    </div>
+
+{% endif %}

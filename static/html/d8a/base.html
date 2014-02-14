@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{% block page_title %}D8A | Analytic Dashboards for Predicting Civic Need{% endblock %}</title>
+        <meta name="description" content="{% block page_description %}D8A Group is making the world's information easier to understand, visualize and share.{% endblock %}">
+{#        <meta name="viewport" content="width=device-width">#}
+
+        <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>        
+		<link rel="shortcut icon" href="/static/images/d8a/favicon.ico">
+		<link rel="stylesheet" href="/static/css/d8a/bootstrap.min.css">
+{#      <link rel="stylesheet" href="/static/css/d8a/bootstrap-responsive.min.css"> #}
+        <link rel="stylesheet" href="/static/css/d8a/font-awesome.min.css">
+        <!--[if lt IE 7]>
+            <link rel="stylesheet" href="/static/css/d8a/font-awesome-ie7.min.css">
+        <![endif]-->
+
+        <link rel="stylesheet" href="/static/css/d8a/main.css?ts={{ settings.DEPLOYMENT_TIMESTAMP }}">
+
+        {% block css %}
+        {% endblock %}
+
+        <script src="/static/js/d8a/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <div id="pre-header">
+            <div class="container">
+                <div class="row-fluid">
+                    <ul id="pre-header-social-links" class="inline pull-left">
+                        <li>
+							<a href="http://blog.d8a.com" target="_blank" title="Follow our Blog">
+                                <i class="icon-twitter"></i> Blog
+                            </a>
+						 </li>
+						<li>
+                            <a href="http://facebook.com/d8agroup" target="_blank" title="Follow Us on Facebook">
+                                <i class="icon-facebook"></i> Facebook
+                            </a>
+                        </li>
+						 <li class="last">
+                            <a href="http://twitter.com/d8agroup" target="_blank" title="View D8A on Twitter" class="last">
+                                <i class="icon-twitter"></i> Twitter
+                            </a>
+                        </li>
+                    </ul>
+                    <div id="pre-header-contact-info" class="pull-right">
+                        <i class="icon-map-marker"></i>Philadelphia, PA, USA
+                        <i class="icon-phone"></i> +1 (520) 301-7906
+                        <i class="icon-envelope"></i> info@d8a.com
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% block body %}{% endblock %}
+
+        <footer>
+            <div class="container">
+                &copy; 2013 D8A Group LTD Liability Co.
+            </div>
+        </footer>
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+        <script src="/static/js/d8a/vendor/bootstrap.min.js"></script>
+
+        <script src="/static/js/d8a/main.js?ts={{ settings.DEPLOYMENT_TIMESTAMP }}"></script>
+        <script src="/static/js/shared/analytics_google.js?ts={{ settings.DEPLOYMENT_TIMESTAMP }}"></script>
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-42744736-1', 'd8a.com');
+            ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>

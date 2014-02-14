@@ -1,0 +1,18 @@
+{% if context == 'thumbnail' %}
+
+    <li class="product-thumbnail odc" data-target="sift">
+        <img src="/static/images/d8a/products/siftdeck.png" />
+        <div class="caption">
+            <p>Predictive Analytics</p>
+        </div>
+    </li>
+
+{% else %}
+
+    <div class="product sift">
+        <h2>Sift Deck</h2>
+        <img src="https://s3.amazonaws.com/screenshots.angel.co/a6/274822/09eae956907cc0e86166d0d3964b2f74-preview505_jpg.jpg" class="pull-left main-image" />
+        <p>SiftDeck helps organizations anticipate potential threats (to operations or reputation) by monitoring the people, places, and things they care about. Users simply enter key terms or locations related to their business or organizations. As trends and events effect the things related to those key interests, SiftDeck alerts users to things that might be indicate vulnerabilities in their operations. Visit <a href="http://siftdeck.com">SiftDeck.com</a></p>
+    </div>
+
+{% endif %}

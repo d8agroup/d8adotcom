@@ -1,0 +1,79 @@
+{% extends 'abayima/base.html' %}
+
+{% block page_title %}Abayima.com | Donate{% endblock %}
+{% block additional_meta_description %}Abayima is a non-profit organization that provides technology solutions for protecting human rights and free speech around the globe.{% endblock %}
+{% block additional_meta_keywords %}open data, liberation technology, journalism, oppression, disruption, communication{% endblock %}
+
+{% block body_class %}donate{% endblock %}
+
+{% block content %}
+
+        <nav class="secondaryNav">
+
+
+                <div class="container mobileNav">
+
+                <div class="sixteen columns mobileNavWrapper"></div>
+
+            </div>
+
+            <ul>
+
+                <li class="donate"><a href="/donate"><i class="icon-plus-circled"></i>donate</a></li>
+                <li class="mail"><a href="contact.html"><i class="icon-mail"></i></a></li>
+                <li class="twitter"><a href="http://twitter.com/abayima"><i class="icon-twitter"></i></a></li>
+                <li class="facebook"><a href="http://facebook.com/abayima"><i class="icon-facebook"></i></a></li>
+                 <li class="search"><a href="#"><i class="icon-search"></i><i class="icon-cancel"></i></a></li>
+
+        	</ul>
+              <div class="topBarSearch clearfix">
+
+                <form method="get" id="searchform">
+    <!-- Search Feature -->
+ <input type="text" value="" name="s" id="s" placeholder="Enter Keywords ...">
+ <input type="submit" class="button-small-theme" id="searchsubmit" value="Go">
+
+  </form>
+
+            </div>
+
+        </nav>
+
+        </div>
+
+    </div>
+
+</div>
+
+<header style="background: url(../static/images/abayima/slider/3-syria.jpg) top center no-repeat;">
+    
+    <div class="container">
+        
+        <div class="sixteen columns">
+            
+            <a href="index.html"><img src="../static/images/abayima/logo.png" alt="" /></a>
+            
+        </div>
+        
+    </div>
+    
+</header>
+
+	<div class="pageContent">
+        
+        <div class="container">
+            
+            <div class="nine columns offset-by-one">
+                
+                <h1 class="pageTitle">DONATIONS</h1>
+                
+                <p>Details available soon.</p>                
+            </div>
+            
+            {% include 'abayima/shared/side_nav.html' %}
+            
+        </div>
+        
+    </div>
+
+{% endblock %}

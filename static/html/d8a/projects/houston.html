@@ -1,0 +1,19 @@
+{% if context == 'thumbnail' %}
+
+    <li class="project-thumbnail houston" data-target="houston">
+        <img src="/static/images/d8a/projects/houston.png" />
+        <div class="caption">
+            <p>Working to Create Smarter Cities</p>
+        </div>
+    </li>
+
+{% else %}
+
+    <div class="project houston">
+        <h2>Working to Create Smarter Cities</h2>
+        <img src="/static/images/d8a/projects/houston.png" class="pull-left main-image" />
+        <p>A major city in Texas used our products to plan a better system that would allow officials to prepare for potential disaster scenarios. Our emergency management system was implemented to change the way cities communicate with citizens in times of crisis.</p>
+        <p>Leveraging crowdsourcing and social media, this product allows employees and volunteers to prioritize response to the most urgent events based on public conversation.</p>
+    </div>
+
+{% endif %}

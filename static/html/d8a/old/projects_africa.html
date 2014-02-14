@@ -1,0 +1,46 @@
+{% extends 'd8a/base.html' %}
+
+{% block css %}
+{% endblock %}
+
+{% block body %}
+    {% include 'd8a/nav_main.html' with current_page='projects' %}
+    {% include 'd8a/nav_work.html' with current_page='africa' %}
+
+    <div class="container projects">
+        <h1>We realize the potential of Africa</h1>
+        <div class="project-details-container">
+            <div class="project-details-message">
+                <h2>We build capacity and business that drive social change.</h2>
+                <h2>We identify and support African entrepreneurs and help companies capture the potential of the continent.</h2>
+                <p><i class="icon-caret-left"></i> Click any of our project to find out more</p>
+            </div>
+            {% include 'd8a/projects/_all_projects.html' %}
+        </div>
+        <ul class="project-list inline">
+            {% with 'thumbnail' as context %}
+                {% include 'd8a/projects/a4a_1.html' %}
+                {% include 'd8a/projects/hive.html' %}
+                {% include 'd8a/projects/abayima.html' %}
+                {% include 'd8a/projects/rnw_1.html' %}
+                {% include 'd8a/projects/swiftriver.html' %}
+                {% include 'd8a/projects/questionbox.html' %}
+                {% include 'd8a/projects/googletranslate.html' %}
+            {% endwith %}
+        </ul>
+        <h3>Other projects not related to Africa than you may be interested in</h3>
+        <ul class="project-list inline">
+            {% with 'thumbnail' as context %}
+                {% include 'd8a/projects/wwp.html' %}
+                {% include 'd8a/projects/ted_globe.html' %}
+                {% include 'd8a/projects/geosprocket.html' %}
+                {% include 'd8a/projects/houston.html' %}
+                {% include 'd8a/projects/openseas.html' %}
+                {% include 'd8a/projects/trss.html' %}
+                {% include 'd8a/projects/hfobd.html' %}
+                {% include 'd8a/projects/masas.html' %}
+            {% endwith %}
+        </ul>
+    </div>
+
+{% endblock %}

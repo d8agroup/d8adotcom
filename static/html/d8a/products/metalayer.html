@@ -1,0 +1,19 @@
+{% if context == 'thumbnail' %}
+
+    <li class="product-thumbnail metalayer" data-target="metalayer">
+        <img src="/static/images/d8a/products/dashboard.png" />
+        <div class="caption">
+            <p>Big Data & Analytics</p>
+        </div>
+    </li>
+
+{% else %}
+
+    <div class="product metalayer">
+        <h2>MetaLayer</h2>
+        <img src="/static/images/d8a/products/dashboard.png" class="pull-left main-image" />
+        <p>Our award winning MetaLayer software makes working with data drag and drop simple! It's a practical solution that makes working with large, disparate datasets easy for technical and non-technical people. It was designed to help you find the most relevant bits of information you should be concerned with from social media or news streams in the quickest way possible.</p>
+		<p>With the MetaLayer dashboard, structured business data can be effortlessly combined with unstructured social feeds in a dynamic environment. Visit <a href="http://metalayer.com">MetaLayer.com</a></p>
+    </div>
+
+{% endif %}

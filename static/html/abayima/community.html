@@ -1,0 +1,101 @@
+{% extends 'abayima/base.html' %}
+
+{% block page_title %}Abayima.com | Community{% endblock %}
+{% block additional_meta_description %}Abayima is a non-profit organization that provides technology solutions for protecting human rights and free speech around the globe.{% endblock %}
+{% block additional_meta_keywords %}open data, liberation technology, journalism, oppression, disruption, communication{% endblock %}
+
+{% block body_class %}community{% endblock %}
+
+{% block content %}
+
+        <nav class="secondaryNav">
+
+
+                <div class="container mobileNav">
+
+                <div class="sixteen columns mobileNavWrapper"></div>
+
+            </div>
+
+            <ul>
+
+                <li class="donate"><a href="/donate"><i class="icon-plus-circled"></i>donate</a></li>
+                <li class="mail"><a href="contact.html"><i class="icon-mail"></i></a></li>
+                <li class="twitter"><a href="http://twitter.com/abayima"><i class="icon-twitter"></i></a></li>
+                <li class="facebook"><a href="http://facebook.com/abayima"><i class="icon-facebook"></i></a></li>
+                 <li class="search"><a href="#"><i class="icon-search"></i><i class="icon-cancel"></i></a></li>
+
+        	</ul>
+              <div class="topBarSearch clearfix">
+
+                <form method="get" id="searchform">
+    <!-- Search Feature -->
+ <input type="text" value="" name="s" id="s" placeholder="Enter Keywords ...">
+ <input type="submit" class="button-small-theme" id="searchsubmit" value="Go">
+
+  </form>
+
+            </div>
+
+        </nav>
+
+        </div>
+
+    </div>
+
+</div>
+
+<header style="background: url(../static/images/abayima/slider/3-syria.jpg) top center no-repeat;">
+    
+    <div class="container">
+        
+        <div class="sixteen columns">
+            
+            <a href="index.html"><img src="../static/images/abayima/logo.png" alt="" /></a>
+            
+        </div>
+        
+    </div>
+    
+</header>
+
+	<div class="pageContent">
+        
+        <div class="container">
+            
+            <div class="nine columns offset-by-one">
+                
+                <h1 class="pageTitle">OUR COMMUNITY</h1>
+                
+                <p>The Abayima community is a place for interaction with other individuals who are using technology to ensure access to information is priority in even the most dire scenarios.</p>
+
+				<p><a class="button-small teal rounded3" href="http://community.abayima.com">Wiki</a> <a class="button-small blue rounded3" href="http://groups.google.com/group/abayima/">Discuss</a> <a class="button-small orange rounded3" href="http://github.com/abayima">GitHub</a> <a class="button-small grey rounded3" href="#chat">Chat</a></p>
+
+				<p><h3>The Abayima Documentation Wiki</h3>
+				Explore usecases, FAQs, installation instructions and more <a href="http://community.abayima.com">on our community wiki</a>.</p>
+
+				<p><h3>The Abayima Discussion Group</h3>
+				Connect with other technologists who seek to use their skills to improve citizen access to information during internet & communication blackouts.</p>
+				<p><a class="button-small blue rounded3" href="http://groups.google.com/group/abayima/">Join!</a></p>
+				<p><h3>Open Source</h3>
+				What projects are we contributing to at Abayima? Find out here on our GitHub...</p>
+				<p><a class="button-small orange rounded3" href="http://github.com/abayima">GitHub</a></p>    
+				<p><a name="chat"></a><h3>Chat</h3>
+				Want to interact with our team in real-time? Find us in our public chat rooms on IRC and Skype.<br /></p>
+				<p><a class="button-small grey rounded3" href="http://webchat.freenode.net/">IRC</a> <a class="button-small lightblue rounded3" href="http://beta.skype.com/en/download-skype/skype-for-computer/">Skype</a></p>
+				<p><strong>IRC</strong><br/>
+				irc.freenode.net #Abayima<br/>
+				irc.freenode.net #OpenSimKit<br /><br />
+				<strong>SKYPE</strong><br/>
+				To join us on Skype, send a request to user <em>j.gosier</em> that says: "I would like to join the Abayima SIM Kit conversation."</p>
+				<p><h3>Frequently Asked Questions</h3>
+				Do you have a question about our work? <a href="http://community.abayima.com/index.php/FAQ">Check the FAQ</a> to see if we've posted an answer already.</p>
+            </div>
+            
+            {% include 'abayima/shared/side_nav.html' %}
+            
+        </div>
+        
+    </div>
+
+{% endblock %}

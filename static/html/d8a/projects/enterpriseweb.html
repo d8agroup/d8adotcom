@@ -1,0 +1,19 @@
+{% if context == 'thumbnail' %}
+
+    <li class="project-thumbnail enterpriseweb" data-target="enterpriseweb">
+        <img src="/static/images/d8a/projects/enterpriseweb.png" />
+        <div class="caption">
+            <p>Interaction Design for Enterprise Operations</p>
+        </div>
+    </li>
+
+{% else %}
+
+    <div class="project enterpriseweb">
+        <h2>Interaction Design for Enterprise Operations</h2>
+        <img src="/static/images/d8a/projects/enterpriseweb.png" class="pull-left main-image" />
+        <p>Working with the team behind the acclaimed enterprise operations platform, <a target="_blank" href="http://enterpriseweb.com/">EnterpriseWeb</a> , D8A re-imagined how enterprise users might interact with complex data models.</p>
+        <p>Over the course of our engagement, we worked to rethink and redesign the way enterprise users approach and interact with the data that drives their business. We worked with the client to understand the capabilities of their platform and to improve the user experience of their software.</p>
+    </div>
+
+{% endif %}

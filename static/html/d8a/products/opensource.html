@@ -1,0 +1,18 @@
+{% if context == 'thumbnail' %}
+
+    <li class="product-thumbnail opensource" data-target="opensource">
+        <img src="/static/images/d8a/products/opensource-2.jpg" />
+        <div class="caption">
+            <p>Open Source Libraries</p>
+        </div>
+    </li>
+
+{% else %}
+
+    <div class="product opensource">
+        <h2>Open Source Repository and Code</h2>
+        <img src="/static/images/d8a/products/opensource-2.jpg" class="pull-left main-image" />
+        <p>Visit our profile on <a href="http://github.com/d8agroup">GitHub</a> to find our contributions to the open source community. Many of our own products are open source and we actively contribute to a number of other open source projects.</p>
+    </div>
+
+{% endif %}

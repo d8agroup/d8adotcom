@@ -1,0 +1,93 @@
+{% extends 'd8a/base.html' %}
+
+{% block css %}
+{% endblock %}
+
+
+{% block body %}
+    {% include 'd8a/nav_main.html' with current_page='home' %}
+    <div class="container">
+
+        <div id="home-carousel" class="carousel slide">
+            <ol class="carousel-indicators">
+                <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#home-carousel" data-slide-to="1"></li>
+                <li data-target="#home-carousel" data-slide-to="2"></li>
+                <li data-target="#home-carousel" data-slide-to="3"></li>
+            </ol>
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+                <div class="active item">
+                    <a href="/about" class="analytics_action" data-analytics_action_category="Banner Click" data-analytics_action_name="about">
+                        <img src="/static/images/d8a/banners/d8a_logo.png">
+                    </a>
+                </div>
+				<div class="item">
+                    <a href="/about" class="analytics_action" data-analytics_action_category="Banner Click" data-analytics_action_name="about">
+                        <img src="/static/images/d8a/banners/ent_suite.png">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/solutions/data" class="analytics_action" data-analytics_action_category="Banner Click" data-analytics_action_name="data_solutions">
+                        <img src="/static/images/d8a/banners/human.jpg" title="human face of big data">
+                    </a>
+                </div>
+				
+            </div>
+            <!-- Carousel nav -->
+            <a class="carousel-control left" href="#home-carousel" data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#home-carousel" data-slide="next">&rsaquo;</a>
+        </div>
+
+        <h1 id="home-mission-statement">Analytic Dashboards for Predicting Civic Need</h1>
+
+        <div id="home-process">
+            <div class="row-fluid">
+                <div class="span3 process-step">
+                    <a href="/projects"><img src="/static/images/d8a/process/ideation-216.jpg" data-target="ideation" />
+                    <h3>Engage</h3></a>
+                </div>
+                <div class="span3 process-step">
+                    <a href="/products"><img src="/static/images/d8a/process/research-216.jpg" data-target="research" />
+                    <h3>Monitor</h3></a>
+                </div>
+                <div class="span3 process-step">
+                    <a href="/products"><img src="/static/images/d8a/process/strategy-216.jpg" data-target="strategy" />
+                    <h3>Predict</h3></a>
+                </div>
+                <div class="span3 process-step">
+                    <a href="/contact"><img src="/static/images/d8a/process/implementation-216.jpg" data-target="implementation" />
+                    <h3>Deploy</h3></a>
+                </div>
+            </div> 
+            <div id="home-process-details">
+                <div id="home-process-details-none">
+                    <h2>We use data to solve problems at scale.</h2>
+                </div>
+				 <div id="home-process-details-ideation" class="hide">
+						<h2>Civic technology solutions for cities, government and NGOs.</h2>
+	                </div>
+                <div id="home-process-details-research" class="hide">
+                    <h2>Real-time monitoring of populations to improve human service delivery.</h2>
+                </div>
+                <div id="home-process-details-strategy" class="hide">
+                    <h2>Dashboards for risk assessment strategic planning.</h2>
+                </div>
+				<div id="home-process-details-implementation" class="hide">
+                    <h2>We offer a wide-range of products for working with populations.</h2>
+                </div>
+            </div>
+<!--           <a class="site-section-link" href="/capabilities">
+                <i class="icon-caret-right"></i>
+                <h3>We find smart solutions to some of the world's most pervasive problems</h3>
+                <p>Click here to find out about the services we offer in Software Development, Data Analysis, Design and more.</p>
+            </a>
+            <a class="site-section-link" href="/clients">
+                <i class="icon-caret-right"></i>
+                <h3>We work with some the world's leading companies and organizations!</h3>
+                <p>Click here to find out about some of the projects we've delivered over the years.</p>
+            </a> -->
+        </div>
+
+    </div>
+{% endblock %}

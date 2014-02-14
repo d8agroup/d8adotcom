@@ -1,0 +1,34 @@
+{% extends 'd8a/base.html' %}
+
+{% block page_title %}D8A.COM | Selected Projects{% endblock %}
+{% block page_description %}We take ownership of challenges and deliver ground breaking solutions{% endblock %}
+
+{% block body %}
+    {% include 'd8a/nav_main.html' with current_page='projects' %}
+    {% include 'd8a/nav_work.html' with current_page='projects' %}
+
+    <div class="container projects">
+        <h1>SELECTED WORK AND PROJECTS</h1>
+        <div class="project-details-container">
+            <div class="project-details-message">
+                <h2>We work with the world's leading companies and organizations.</h2>
+                <p><i class="icon-caret-left"></i> Click on any of the projects below to find out more</p>
+            </div>
+            {% include 'd8a/projects/_all_projects.html' %}
+        </div>
+        <ul class="project-list inline">
+            {% with 'thumbnail' as context %}
+			{% include 'd8a/projects/ted_globe.html' %}
+			{% include 'd8a/projects/geosprocket.html' %}
+			{% include 'd8a/projects/trss.html' %}
+			{% include 'd8a/projects/hfobd.html' %}
+			{% include 'd8a/projects/wwp.html' %}
+			{% include 'd8a/projects/houston.html' %}
+			{% include 'd8a/projects/openseas.html' %}
+			{% include 'd8a/projects/swiftriver.html' %}
+			{% include 'd8a/projects/masas.html' %}
+            {% endwith %}
+        </ul>
+    </div>
+
+{% endblock %}

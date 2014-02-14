@@ -1,0 +1,13 @@
+*.pyc
+*.db*
+.idea
+Key_1
+Key_1.pub
+*.psd
+*.tmproj
+
+.runner.py.swp
+
+.DS_Store
+
+*.tmproj

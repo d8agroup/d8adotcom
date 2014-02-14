@@ -1,0 +1,97 @@
+<!--begin contact section -->
+<section id="contact">
+    
+    <!--begin contact_wrapper -->
+    <div class="contact_wrapper">
+
+        <!--begin row -->
+        <div class="row">
+            
+            <!--begin twelvecol -->
+            <div class="twelvecol">
+            
+                <!--begin sevencol -->
+                <div class="sevencol">
+            
+                    <!--begin contact_box -->
+                    <div class="contact_box">
+            
+                        <h4>Get in touch</h4>
+                        
+			{% if message_sent %}
+				<div id="message_sent">
+				    <p>Your message has been send and we will be in touch with you soon, thanks!</p>
+                                </div>
+			{% endif %}
+
+                        <!--begin contact form -->
+                        <form id="contact-form" class="contact" action="d8a.com#contact" method="post">
+                            {% csrf_token %}
+                            <div class="twelvecol">
+                                <input class="left-input" type="text" required="" name="first_name" placeholder="First Name*" />
+                                <input class="right-input" type="text" required="" name="last_name" placeholder="Last Name*" />
+                            </div>
+                            <div class="twelvecol">
+                                <input class="left-input" type="email" required="" name="email" placeholder="Email*" />
+                                <input class="right-input" type="text" required="" name="phone" placeholder="Phone No.*" />
+                            </div>
+                            <div class="twelvecol">
+                                <input class="full-input" type="text" required="" name="subject" placeholder="Subject*" />
+                            </div>
+                            <div class="twelvecol">
+                                <textarea name="message" placeholder="Message..." rows="2" cols="20" class="contact-commnent"></textarea>
+                            </div>
+                            <input type="submit" value="Send E-mail" id="submit-button" class="contact-submit" />
+                        </form>
+                        <!--end contact form -->
+                    
+                    </div>
+                    <!--end contact_box -->
+        
+                </div>
+                <!--end sevencol -->
+            
+                <!--begin fivecol -->
+                <div class="fivecol last">
+                
+                    <h4>Contact details</h4>
+                        
+                    <p>Feel free to try to reach us any time of day. Our normal business hours are 9pm to 6pm EST Monday through Friday.</p>
+                                        
+                    <!--begin google_map -->
+                    <iframe class="google_map" src="https://maps.google.com/maps?q=705+S+3rd+St,+Philadelphia,+PA&amp;ie=UTF8&amp;hl=en&amp;hq=&amp;t=m&amp;z=14&amp;ll=39.940353,-75.14776&amp;output=embed"></iframe>
+                    <!--end google_map -->
+                    
+                    <!--begin footer_details -->
+                    <ul class="footer_details">
+                        <li>
+                            <i class="icon-map-marker"></i> D8A, 705 S. 3rd St. #3, Philadelphia, PA 19147
+                        </li>
+                        <li>
+                            <i class="icon-phone"></i> +1 (215) 833-8818
+                        </li>
+                        <li>
+                        	<a href="mailto:info@d8a.com">
+                            	<i class="icon-envelope-alt"></i> info@d8a.com
+                            </a>
+                        </li>
+                        <li>
+                            <i class="icon-twitter"></i> Follow us <a href="https://twitter.com/deighta" target="_blank">@DeightA</a>
+                        </li>
+                    </ul>
+                    <!--end footer_details -->
+                    
+                </div>
+                <!--end fivecol -->
+            
+            </div>
+            <!--end twelvecol -->
+            
+        </div>
+        <!--end row -->
+            
+    </div>
+    <!--end contact_wrapper -->
+
+</section>
+<!--end contact section -->

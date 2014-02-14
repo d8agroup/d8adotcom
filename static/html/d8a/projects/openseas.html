@@ -1,0 +1,18 @@
+{% if context == 'thumbnail' %}
+
+    <li class="project-thumbnail openseas" data-target="openseas">
+        <img src="/static/images/d8a/projects/openseas.png" />
+        <div class="caption">
+            <p>Global Trend Monitoring</p>
+        </div>
+    </li>
+
+{% else %}
+
+    <div class="project openseas">
+        <h2>Global Trend Monitoring</h2>
+        <img src="/static/images/d8a/projects/openseas.png" class="pull-left main-image" />
+        <p>Our client was a sub-contractor working with Defense agencies. For them the D8A team designed and built a platform that allows analysts to monitor global trends in social media.</p>
+    </div>
+
+{% endif %}

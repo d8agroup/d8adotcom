@@ -1,0 +1,47 @@
+<div id="main-nav">
+    <div class="container">
+        <div class="row-fluid">
+            <a href="/">
+                <img src="/static/images/d8a/logo_small.png" id="main-nav-logo" alt="D8A Logo" />
+            </a>
+            <ul class="inline pull-right" id="main-nav-list">
+                <li class="last pull-right {% if current_page == 'initiatives' %}active{% endif %}">
+                    <a href="/initiatives">
+                        <i class="icon-globe"></i>
+                        Impact
+                    </a>
+                </li>
+                <li class="pull-right {% if current_page == 'contact' %}active{% endif %}">
+                    <a href="/contact">
+                        <i class="icon-envelope"></i>
+                        Contact
+                    </a>
+                </li>
+                <li class="pull-right {% if current_page == 'products' %}active{% endif %}">
+                    <a href="/products">
+                        <i class="icon-cogs"></i>
+                        Technology
+                    </a>
+                </li>
+                <li class="pull-right {% if current_page == 'projects' %}active{% endif %}">
+                    <a href="/projects">
+                        <i class="icon-asterisk"></i>
+                        Our Work
+                    </a>
+                </li>
+                <li class="pull-right {% if current_page == 'capabilities' %}active{% endif %}">
+                    <a href="/capabilities">
+                        <i class="icon-puzzle-piece"></i>
+                        Solutions
+                    </a>
+                </li>
+                <li class="pull-right {% if current_page == 'about' %}active{% endif %}">
+                    <a href="/about">
+                        <i class="icon-question"></i>
+                        About
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,73 @@
+{% extends 'd8a/base.html' %}
+
+{% block page_title %}D8A - Civic Engagement{% endblock %}
+{% block page_description %}We improve civic engagement with innovative technology, groundbreaking strategy and data driven thinking{% endblock %}
+
+{% block body %}
+    {% include 'd8a/nav_main.html' with current_page='solutions' %}
+    {% include 'd8a/nav_solutions.html' with current_page='civic_engagement' %}
+
+    <div class="container solutions">
+        <h1 class="with-image">
+            <img src="/static/images/d8a/h1s/civic_engagement.jpg" />
+            <span>We improve civic engagement with innovative technology, groundbreaking strategy and data driven thinking</span>
+        </h1>
+
+        <div class="row">
+            <div class="span8">
+                <div class="process-piece left clearfix large">
+                    <h4>Ideation</h4>
+                    <img src="/static/images/d8a/process/ideation-180.jpg" class="process-image"/>
+                    <h3>We understand how new technologies and strategies can be used to drive civic engagement</h3>
+                    <p>At D8A, ideation is a key part of the way we approach solutions in civic engagement. Our understanding and ability to truly think out of the box allow us to drive innovative thinking and create ideas for improvement that are truly groundbreaking.</p>
+                </div>
+                <div class="process-piece right clearfix large">
+                    <h4>Research</h4>
+                    <img src="/static/images/d8a/process/research-180.jpg" class="process-image"/>
+                    <h3>We enable organizations to understand their customers in new, data driven ways</h3>
+                    <p>At D8A we have consistently enabled organizations to improve their understanding of their customers. We have innovated methods or research and analysis that allow our clients to draw new conclusions and devise new strategies.</p>
+                </div>
+                <div class="process-piece left clearfix large">
+                    <h4>Strategy</h4>
+                    <img src="/static/images/d8a/process/strategy-180.jpg" class="process-image"/>
+                    <h3>D8A creates strategies that drive your service delivery objectives</h3>
+                    <p>Our team has years of experience consulting organizations that need to improve their service delivery and civic engagement workflows. We will use our expertise in new technologies and new communication channels to inform your business growth.</p>
+                </div>
+                <div class="process-piece right clearfix large">
+                    <h4>Implementation</h4>
+                    <img src="/static/images/d8a/process/implementation-180.jpg" class="process-image"/>
+                    <h3>We seamlessly combine innovative technology and user centric design</h3>
+                    <p>At D8A we have a constant pulse on technologies that can be leveraged to drive civic engagement and improve service delivery. We understand usability and strive to ensure that all our solutions are as beautiful as they are functional.</p>
+                </div>
+            </div>
+            <div class="span3 offset1">
+                <h2><i class="icon-quote-left"></i> Our solutions inform critical decision making and emergency planning and management</h2>
+                <h2 class="last"><i class="icon-quote-left"></i> We allow organization to leverage new communication platforms to engage with their customers</h2>
+            </div>
+        </div>
+
+        <h3>
+            <a href="/projects" class="pull-right">See all out projects <i class="icon-caret-right"></i></a>
+            Examples of our solutions in civic engagement and service delivery
+        </h3>
+        <div class="project-details-container">
+            <div>{# This empty div is required #}</div>
+            {% include 'd8a/projects/_all_projects.html' %}
+        </div>
+        <ul class="project-list inline">
+            {% with 'thumbnail' as context %}
+                {% include 'd8a/projects/wwp.html' %}
+                {% include 'd8a/projects/swiftriver.html' %}
+                {% include 'd8a/projects/masas.html' %}
+                {% include 'd8a/projects/houston.html' %}
+                {% include 'd8a/projects/googletranslate.html' %}
+            {% endwith %}
+        </ul>
+        <a class="site-section-link" href="/contact">
+            <i class="icon-caret-right"></i>
+            <h3>Looking for solutions to civic engagement and service delivery problems?</h3>
+            <p>If so, click here and contact us now.</p>
+        </a>
+    </div>
+
+{% endblock %}

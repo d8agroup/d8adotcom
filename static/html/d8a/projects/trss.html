@@ -1,0 +1,18 @@
+{% if context == 'thumbnail' %}
+
+    <li class="project-thumbnail trss" data-target="trss">
+        <img src="/static/images/d8a/projects/trss.png" />
+        <div class="caption">
+            <p>Predictive Analytics</p>
+        </div>
+    </li>
+
+{% else %}
+
+    <div class="project trss">
+        <h2>Predictive Analytics</h2>
+        <img src="/static/images/d8a/projects/trss.png" class="pull-left main-image" />
+        <p>Thomson Reuters used our products to analyze gigs of data, to surface trends and patterns in their coverage of specific interest over time.  This allowed them to look for, and sometimes find, correlations between past and present events so that they might anticipate future happenings.</p>
+    </div>
+
+{% endif %}

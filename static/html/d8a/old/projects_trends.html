@@ -1,0 +1,54 @@
+{% extends 'd8a/base.html' %}
+
+{% block css %}
+{% endblock %}
+
+{% block body %}
+    {% include 'd8a/nav_main.html' with current_page='projects' %}
+    {% include 'd8a/nav_work.html' with current_page='trends' %}
+
+    <div class="container projects">
+        <h1>Our data solutions expose trends and affect change</h1>
+        <div class="project-details-container">
+            <div class="project-details-message">
+                <h2>We improve service delivery with data driven thinking.</h2>
+                <p>
+                    Our solutions have been used in a wide verity of situation including: improving the workflow of first
+                    responders and, applying qualitative research principals to social media data.
+                    <br/>
+                    <br/>
+                    We deliver innovative data driven solutions to some of the most pressing challenges affecting global
+                    service delivery.
+                </p>
+                <h2>We create platforms for population interaction.</h2>
+                <p><i class="icon-caret-left"></i> Click any of our project to find out more</p>
+            </div>
+            {% include 'd8a/projects/_all_projects.html' %}
+        </div>
+        <ul class="project-list inline">
+            {% with 'thumbnail' as context %}
+                {% include 'd8a/projects/wwp.html' %}
+                {% include 'd8a/projects/ted_globe.html' %}
+                {% include 'd8a/projects/geosprocket.html' %}
+                {% include 'd8a/projects/houston.html' %}
+                {% include 'd8a/projects/openseas.html' %}
+                {% include 'd8a/projects/trss.html' %}
+                {% include 'd8a/projects/hfobd.html' %}
+                {% include 'd8a/projects/masas.html' %}
+            {% endwith %}
+        </ul>
+        <h3>Other projects not related to exposing trends than you may be interested in</h3>
+        <ul class="project-list inline">
+            {% with 'thumbnail' as context %}
+                {% include 'd8a/projects/a4a_1.html' %}
+                {% include 'd8a/projects/hive.html' %}
+                {% include 'd8a/projects/abayima.html' %}
+                {% include 'd8a/projects/rnw_1.html' %}
+                {% include 'd8a/projects/swiftriver.html' %}
+                {% include 'd8a/projects/questionbox.html' %}
+                {% include 'd8a/projects/googletranslate.html' %}
+            {% endwith %}
+        </ul>
+    </div>
+
+{% endblock %}

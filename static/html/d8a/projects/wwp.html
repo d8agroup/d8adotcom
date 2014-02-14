@@ -1,0 +1,18 @@
+{% if context == 'thumbnail' %}
+
+    <li class="project-thumbnail wwp" data-target="wwp">
+        <img src="/static/images/d8a/projects/wwp_1.jpg" />
+        <div class="caption">
+            <p>Using Big Data to Improve Veteran Services</p>
+        </div>
+    </li>
+
+{% else %}
+
+    <div class="project wwp">
+        <h2>Big Data Improving Veteran Services</h2>
+        <img src="/static/images/d8a/projects/wwp_1.jpg" class="pull-left main-image" />
+        <p>The U.S. Army's Wounded Warrior Project implemented a revolutionary approach for creating quantitative metrics from qualitative research of social media conversations. Using our solutions, a team of researches working for the Army was able to perform analytics on social media that allowed the Army to improve the services and offerings it provides to combat veterans.</p>
+    </div>
+
+{% endif %}

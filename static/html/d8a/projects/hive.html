@@ -1,0 +1,18 @@
+{% if context == 'thumbnail' %}
+
+    <li class="project-thumbnail hive" data-target="hive">
+        <img src="/static/images/d8a/projects/hive.jpg" />
+        <div class="caption">
+            <p>Designing a Co-working Space</p>
+        </div>
+    </li>
+
+{% else %}
+
+    <div class="project hive">
+        <h2>Designing a Co-working Space</h2>
+        <img src="/static/images/d8a/projects/hive.jpg" class="pull-left main-image" />
+        <p><a href="http://hivecolab.org/" target="_blank">Hive Colab</a> is an open, work environment, and innovation hub for young tech entrepreneurs in Kampala, Uganda that we conceived, designed in 2010. It was created to support young creatives and support them in their efforts to create Africa's next big thing. The strategic planning that allowed Hive Colab to become the success it has lies in the ability of our team to define and execute strategies that work across diverse communities.</p>
+    </div>
+
+{% endif %}

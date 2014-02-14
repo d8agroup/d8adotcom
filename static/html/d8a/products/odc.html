@@ -1,0 +1,19 @@
+{% if context == 'thumbnail' %}
+
+    <li class="product-thumbnail odc" data-target="odc">
+        <img src="/static/images/d8a/products/opensource.png" />
+        <div class="caption">
+            <p>Streaming Data</p>
+        </div>
+    </li>
+
+{% else %}
+
+    <div class="product odc">
+        <h2>Open Data Core</h2>
+        <img src="/static/images/d8a/products/opensource.png" class="pull-left main-image" />
+        <p>ODC is backend architecture that simplifies moving and organizing excessive streams of data. Historical analysis and batch reports are incredibly inefficient. In situations where you need to make real-time, well-informed choices, data must also be timely and actionable.</p> 
+<p>ODC lets users process data as it flows into an application, powering real-time dashboards and on-the-fly analytics and delivering seamless data to  SQL, NoSQL databases, and APIs. It's like glue that connects systems together and makes Big Data analytics feasible. Immediately deployable, ODC has simple integration points that make it easy to install in any high-demand data environment.</p>
+    </div>
+
+{% endif %}

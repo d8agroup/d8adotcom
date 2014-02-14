@@ -1,0 +1,31 @@
+{% if context == 'thumbnail' %}
+
+    <li class="project-thumbnail masas" data-target="masas">
+        <img src="/static/images/d8a/projects/masas.png" />
+        <div class="caption">
+            <p>Civic Technology Solutions for Government</p>
+        </div>
+    </li>
+
+{% else %}
+
+    <div class="project masas">
+        <h2>Civic Technology Solutions for Government</h2>
+        <img src="/static/images/d8a/projects/masas.png" class="pull-left main-image" />
+        <p>Working for the government of Canada, D8A created extensions to the <a href="http://www.masas-x.ca/en/" target="_blank">Multi Agency Situational Awareness System (MASAS)</a> designed to make the system social media aware.</p>
+        <p>Drawing upon our experience with open source crowdsourcing platforms like Ushahidi and SwiftRiver, we were able to engineer a solution that allows real-time content to be integrated into the disaster and emergency planning of states and cities.</p>
+        <div class="process-piece">
+            <img src="/static/images/d8a/process/ideation-70.jpg"/>
+            <p>Our team has a wealth of experience delivering and working with crowdsourcing platforms. This expertise allowed us to work with the MASAS team to conceptualize the right workflow for integrating social content into their traditional workflows.</p>
+        </div>
+        <div class="process-piece">
+            <img src="/static/images/d8a/process/strategy-70.jpg"/>
+            <p>The desire to begin leveraging public data with existing service delivery systems is one that we at D8A see time and again.</p>
+        </div>
+        <div class="process-piece">
+            <img src="/static/images/d8a/process/implementation-70.jpg"/>
+            <p>This project is a great example of our teams ability to make new thinking work within old systems and practices, particularly the rigid protocols found within government.</p>
+        </div>
+    </div>
+
+{% endif %}

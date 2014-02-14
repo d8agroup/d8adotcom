@@ -1,0 +1,45 @@
+{% extends 'd8a/base.html' %}
+
+{% block page_title %}D8A.COM | Partners & Clients{% endblock %}
+{% block page_description %}We work in partnership with some of the worlds leading companies and organizations{% endblock %}
+
+{% block body %}
+    {% include 'd8a/nav_main.html' with current_page='projects' %}
+    {% include 'd8a/nav_work.html' with current_page='clients' %}
+
+    <div class="container clients">
+        <h1>PAST & PRESENT CUSTOMERS</h1>
+        <ul id="clients-logos" class="inline">
+            <!-- <li><img src="/static/images/d8a/clients/google.png"/></li> -->
+            <li><img src="/static/images/d8a/clients/ted_color.png"/></li>
+            <!-- <li><img src="/static/images/d8a/clients/worldbank_color.png"/></li> -->
+            <li><img src="/static/images/d8a/clients/state_color.png"/></li>
+            <!-- <li><img src="/static/images/d8a/clients/knight_color.png"/></li> -->
+            <li><img src="/static/images/d8a/clients/trss_color.png"/></li>
+            <li><img src="/static/images/d8a/clients/usarmy_color.png"/></li>
+            <li><img src="/static/images/d8a/clients/houston.png"/></li>
+            <li><img src="/static/images/d8a/clients/masas.png"/></li>
+            <li><img src="/static/images/d8a/clients/hfobd_color.png"/></li>
+            <li><img src="/static/images/d8a/clients/navanti_color.png"/></li>
+            <!-- <li><img src="/static/images/d8a/clients/rnw_color.png"/></li> -->
+            <li><img src="/static/images/d8a/clients/wwp_color.png"/></li>
+        </ul>
+{#        <div class="client-details-container">#}
+{#            <div class="client-details-message">#}
+{#                <h2>Introduction to clients: slogan</h2>#}
+{#                <p>Introduction to clients body!</p>#}
+{#                <p>Sed volutpat laoreet ornare. Donec hendrerit rhoncus turpis ut pulvinar. Ut risus turpis, eleifend vel massa ac, suscipit adipiscing tortor. Nunc ut porttitor nisl. Maecenas turpis arcu, tristique at erat ac, semper condimentum nibh. Quisque blandit fringilla rhoncus. Nam sollicitudin interdum purus eget dignissim. Ut tristique ultricies ipsum at euismod.</p>#}
+{#                <p>Sed volutpat laoreet ornare. Donec hendrerit rhoncus turpis ut pulvinar. Ut risus turpis, eleifend vel massa ac, suscipit adipiscing tortor. Nunc ut porttitor nisl. Maecenas turpis arcu, tristique at erat ac, semper condimentum nibh. Quisque blandit fringilla rhoncus. Nam sollicitudin interdum purus eget dignissim. Ut tristique ultricies ipsum at euismod.</p>#}
+{#                <p>Sed volutpat laoreet ornare. Donec hendrerit rhoncus turpis ut pulvinar. Ut risus turpis, eleifend vel massa ac, suscipit adipiscing tortor. Nunc ut porttitor nisl. Maecenas turpis arcu, tristique at erat ac, semper condimentum nibh. Quisque blandit fringilla rhoncus. Nam sollicitudin interdum purus eget dignissim. Ut tristique ultricies ipsum at euismod.</p>#}
+{#                <p><i class="icon-caret-left"></i> Click any of our client to find out more</p>#}
+{#            </div>#}
+{#            {% include 'd8a/clients/_all_clients.html' %}#}
+{#        </div>#}
+{#        <ul class="client-list inline">#}
+{#            {% with 'thumbnail' as context %}#}
+{#                {% include 'd8a/clients/_all_clients.html' %}#}
+{#            {% endwith %}#}
+{#        </ul>#}
+    </div>
+
+{% endblock %}

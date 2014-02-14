@@ -1,0 +1,82 @@
+{% extends 'abayima/base.html' %}
+
+{% block page_title %}Abayima.com | Resources{% endblock %}
+{% block additional_meta_description %}Abayima is a non-profit organization that provides technology solutions for protecting human rights and free speech around the globe.{% endblock %}
+{% block additional_meta_keywords %}open data, liberation technology, journalism, oppression, disruption, communication{% endblock %}
+
+{% block body_class %}resources{% endblock %}
+
+{% block content %}
+
+        <nav class="secondaryNav">
+
+
+                <div class="container mobileNav">
+
+                <div class="sixteen columns mobileNavWrapper"></div>
+
+            </div>
+
+            <ul>
+
+                <li class="donate"><a href="/donate"><i class="icon-plus-circled"></i>donate</a></li>
+                <li class="mail"><a href="contact.html"><i class="icon-mail"></i></a></li>
+                <li class="twitter"><a href="http://twitter.com/abayima"><i class="icon-twitter"></i></a></li>
+                <li class="facebook"><a href="http://facebook.com/abayima"><i class="icon-facebook"></i></a></li>
+                 <li class="search"><a href="#"><i class="icon-search"></i><i class="icon-cancel"></i></a></li>
+
+        	</ul>
+              <div class="topBarSearch clearfix">
+
+                <form method="get" id="searchform">
+    <!-- Search Feature -->
+ <input type="text" value="" name="s" id="s" placeholder="Enter Keywords ...">
+ <input type="submit" class="button-small-theme" id="searchsubmit" value="Go">
+
+  </form>
+
+            </div>
+
+        </nav>
+
+        </div>
+
+    </div>
+
+</div>
+
+<header style="background: url(../static/images/abayima/slider/3-syria.jpg) top center no-repeat;">
+    
+    <div class="container">
+        
+        <div class="sixteen columns">
+            
+            <a href="index.html"><img src="../static/images/abayima/logo.png" alt="" /></a>
+            
+        </div>
+        
+    </div>
+    
+</header>
+
+	<div class="pageContent">
+        
+        <div class="container">
+            
+            <div class="nine columns offset-by-one">
+                
+                <h1 class="pageTitle">resources</h1>
+                
+                <p><h3>OPEN SIM KIT</h3></p>
+<p>SIM Kit is a project which aims to make it easier for users to turn their SIM cards into information storage cards. Open SIM Kit (OSK) is a solution for activists, journalists, and anyone else interested in using SIM chips as read/write devices. You can find out more about it <a href="http://opensimkit.com">here</a>.</p>
+<a class="button-big grey rounded99" href="http://opensimkit.com">GET IT</a>
+                
+            </div>
+
+			{% include 'abayima/shared/side_nav.html' %}
+            
+        </div>
+        
+    </div>
+
+{% endblock %}
