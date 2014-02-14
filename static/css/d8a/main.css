@@ -162,10 +162,10 @@ a { color:#008ba9; }
 #nav-solutions li.active { background-color:#008ba9; }
 
 /* HOME */
-#home-mission-statement { text-align: center; margin: 50px;}
-#home-process .process-step { width:23%; text-align:center; position:relative; }
-#home-process .process-step h3 { position:absolute; width:100%; text-align:center; bottom:-15px; text-shadow: 2px 2px 5px #DDD; font-size:20px; }
-#home-process-details { height:100px; text-align:center; margin:50px 0;}
+#home-mission-statement { text-align: center; margin: 50px; }
+#home-process .process-step { width:23%; text-align:center; position:relative; padding:40px 0 40px 0; }
+#home-process .process-step h3 { position:absolute; width:100%; text-align:center; bottom:-15px; font-size:20px; }
+#home-process-details { height:25px; text-align:center; margin:50px 0;}
 .site-section-link { width:80%; margin:20px auto; display:block; text-decoration:none; position:relative; height:200px; text-decoration: none !important;}
 .site-section-link > i { float:right; font-size:250px; position:absolute; top:-50px; right:0; padding-left:50px;}
 .site-section-link h3 { padding-right:150px; }
