@@ -1,0 +1,20 @@
+{% if context == 'thumbnail' %}
+
+    <li class="product-thumbnail whitepaper" data-target="whitepaper">
+        <img src="/static/images/d8a/products/dashboard.png" />
+        <div class="caption">
+            <p>WHITE PAPERS</p>
+        </div>
+    </li>
+
+{% else %}
+
+    <div class="product whitepaper">
+        <h2>WHITE PAPERS</h2>
+		<p><strong>Public Safety</strong></p>
+		<p>Turning Online Activity into Actionable Insights During Crisis Scenarios [<a href="http://www.slideshare.net/jongos1/data-drivencrisismonitoring-29929868">Link</a>]</p>
+		<p><strong>Brands</strong></p>
+		<p>How To Mine Online Audiences to Improve Public Relation Strategies [<a href="http://www.slideshare.net/jongos1/data-mining-online-audiences-with-d8a-group">Link</a>]</p>
+    </div>
+
+{% endif %}

@@ -1,0 +1,27 @@
+{% extends 'd8a/base.html' %}
+
+{% block page_title %}D8A.COM | Resources{% endblock %}
+{% block page_description %}Learn about our solutions and services.{% endblock %}
+
+{% block body %}
+    {% include 'd8a/nav_main.html' with current_page='resources' %}
+    {% include 'd8a/nav_work.html' with current_page='resources' %}
+
+    <div class="container product">
+        <h1>D8A Resources</h1>
+        <div class="product-details-container">
+            <div class="product-details-message">
+                <h2>&nbsp;How D8A Can Help Your Team</h2>
+                <p>D8A Group has a number of solutions available to help your team tackle problems. Here you'll find links to videos, research papers, and other resources that might answer your questions.</p>
+            </div>
+            {% include 'd8a/resources/_all_resources.html' %}
+        </div>
+        <ul class="product-list inline">
+            {% with 'thumbnail' as context %}
+			{% include 'd8a/resources/video.html' %}
+			{% include 'd8a/resources/whitepapers.html' %}
+            {% endwith %}
+        </ul>
+    </div>
+
+{% endblock %}
