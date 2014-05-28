@@ -136,6 +136,9 @@ HOST_MIDDLEWARE_URLCONF_MAP = {
     'www.apps4africa.org':'apps4africa.urls',
     'apps4africa.org':'apps4africa.urls',
 
+	'local.fund.appfrica.com:8000':'apps4africa.urls',
+    'fund.appfrica.com':'apps4africa.urls',
+
 	'local.gosfellowship.com:8000':'gos.urls',
     'www.gosfellowship.com':'gos.urls',
     'gosfellowship.com':'gos.urls',
